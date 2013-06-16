@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PCS</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="cal">Calender</string>
+    <string name="contact">Contact Us</string>
+    <string name="home">Welcome to Crimson</string>
+    <string name="weather">Weather</string>
+    <string name="login">Log-In</string>
+    <string name="hello">Hello World, LoginActivity!</string>
+    <string name="rem">Remember Password</string>
+    <string name="user">User Name</string>
+    <string name="pwd">Password</string>
+    <string name="forget">Forget Password?</string>
+    <string name="design">Designed By:</string>
+
+</resources>

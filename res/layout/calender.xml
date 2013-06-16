@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Screen Design for Photos -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dip"
+        android:text="@string/cal"
+        android:textSize="18sp" />
+
+    <!--  <CalendarView
+        android:id="@+id/calendarView1"
+        android:layout_width="200dp"
+        android:layout_height="201dp"
+        android:layout_gravity="center" />
+
+    <DigitalClock
+        android:id="@+id/digitalClock1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="DigitalClock" />
+        
+        -->
+        
+</RelativeLayout>

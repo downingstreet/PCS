@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#ffffff" >
+     
+
+      <!-- Header  Starts -->
+
+      <LinearLayout
+          android:id="@+id/header"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:src="@drawable/subheader"
+          android:paddingBottom="5dip"
+          android:paddingTop="20dip" >
+
+          <!-- Logo Start -->
+
+          
+
+          <!-- Logo Ends -->
+      </LinearLayout>
+      <!-- Header Ends -->
+      <!-- Footer Start -->
+      <!-- Footer Ends -->
+
+
+      <!-- Login Form -->
+
+
+      <!-- xmlns:android="http://schemas.android.com/apk/res/android" -->
+      <!-- Login Form Ends -->
+
+      <LinearLayout
+          android:id="@+id/footer"
+          android:layout_width="90dip"
+          android:layout_height="45dip"
+          android:layout_below="@+id/linearLayout1"
+          android:layout_centerHorizontal="true"
+          android:background="@layout/footer_repeat"
+          android:gravity="end" >
+      </LinearLayout>
+
+      <ImageView
+          android:id="@+id/imageView1"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:src="@drawable/subheader" />
+
+      <LinearLayout
+          android:id="@+id/linearLayout1"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentLeft="true"
+          android:layout_centerVertical="true"
+          android:orientation="vertical"
+          android:padding="10dip" >
+
+          <TextView
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/user"
+              android:textColor="#372c24" />
+
+          <EditText
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="20dip"
+              android:layout_marginTop="5dip"
+              android:ems="10"
+              android:singleLine="true" />
+
+          <TextView
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/pwd"
+              android:textColor="#372c24" />
+
+          <EditText
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dip"
+              android:password="true"
+              android:singleLine="true" />
+
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="20dp" >
+
+              <CheckBox
+                  android:id="@+id/checkBox1"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="0.42" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="fill_parent"
+                  android:layout_alignParentTop="true"
+                  android:layout_marginLeft="26dp"
+                  android:layout_toRightOf="@+id/checkBox1"
+                  android:text="@string/rem"
+                  android:textColor="#372c24" />
+
+          </RelativeLayout>
+
+          <Button
+              android:id="@+id/btnLogin"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20dip"
+              android:text="@string/login" />
+
+          <TextView
+              android:id="@+id/link_to_register"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="40dip"
+              android:layout_marginTop="40dip"
+              android:layout_weight="0.20"
+              android:gravity="center"
+              android:text="@string/forget"
+              android:textColor="#000000"
+              android:textSize="10dip" />
+
+          <TextView
+              android:id="@+id/TextView01"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center"
+              android:text="@string/design"
+              android:textColor="#000000"
+              android:textSize="5dip" />
+      </LinearLayout>
+ </RelativeLayout>
+
+
