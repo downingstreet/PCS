@@ -4,7 +4,6 @@ package com.example.pcs;
 import com.actionbarsherlock.app.SherlockFragment;
 import com.example.pcs.R;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +17,13 @@ public class Home extends SherlockFragment{
 		// TODO Auto-generated method stub
 		View view = inflater.inflate(R.layout.home, container, false);
 		return view;
+	}
+	
+	@Override
+	public void onSaveInstanceState(Bundle outState)
+	{
+	    super.onSaveInstanceState(outState);
+	    outState.putString("DO NOT CRASH", "OK");
 	}
 
 

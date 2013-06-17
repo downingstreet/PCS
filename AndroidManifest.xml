@@ -24,52 +24,6 @@
             </intent-filter>
         </activity>
         
-        <!-- <activity 
-            android:name = "com.example.pcs.Home"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="com.example.pcs.HOME" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter> 
-            </activity> -->
-
-        
-        <!-- <activity 
-            android:name = "com.example.pcs.login"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="com.example.pcs.LOGIN" />
-                <category android:name="android.intent.category.DEFAULT" />
-                </intent-filter> 
-            </activity> -->
-        
-        <!-- <activity 
-            android:name = "com.example.pcs.Calender"
-            android:label= "@string/app_name" >
-            <intent-filter>
-                <action android:name="com.example.pcs.CALENDER" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter> 
-            </activity> -->
-        
-        <!-- <activity 
-            android:name = "com.example.pcs.weather" 
-            android:label= "@string/app_name" >
-            <intent-filter>
-                <action android:name="com.example.pcs.WEATHER" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-            </activity> -->
-        
-        <!-- <activity 
-            android:name = "com.example.pcs.Contact"
-            android:label= "@string/app_name" >
-            <intent-filter>
-                <action android:name="com.example.pcs.CONTACT" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter> 
-            </activity> -->
-        
         
          <activity 
             android:name = "com.example.pcs.success"

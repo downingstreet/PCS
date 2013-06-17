@@ -8,17 +8,12 @@ import com.actionbarsherlock.app.ActionBar.Tab;
 import com.example.pcs.R;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
-import android.widget.TabHost;
-import android.widget.TabHost.TabSpec;
 import android.widget.TextView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
-import android.view.Menu;
-import android.view.MenuInflater;
 
 public class MainActivity extends SherlockFragmentActivity {
 	/** Called when the activity is first created. */
@@ -44,17 +39,12 @@ public class MainActivity extends SherlockFragmentActivity {
 
 		mTabsAdapter.addTab(bar.newTab().setText("Home"), Home.class, null);
 		mTabsAdapter.addTab(bar.newTab().setText("Login"), login.class, null);
-		mTabsAdapter.addTab(bar.newTab().setText("Calendar"), Calender.class,
-				null);
-		mTabsAdapter.addTab(bar.newTab().setText("Weather"), weather.class,
-				null);
-		mTabsAdapter.addTab(bar.newTab().setText("Contact Us"), Contact.class,
-				null);
+		mTabsAdapter.addTab(bar.newTab().setText("Contact Us"), Contact.class, null);
 
 	}
 
 	public static class TabsAdapter extends FragmentPagerAdapter implements
-			ActionBar.TabListener, ViewPager.OnPageChangeListener {
+	ActionBar.TabListener, ViewPager.OnPageChangeListener {
 
 		private final Context mContext;
 		private final ActionBar mActionBar;
