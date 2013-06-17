@@ -1,15 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  android:orientation="vertical"
-  android:layout_width="match_parent"
-  android:layout_height="match_parent">
-  
-  <!-- Screen Design for Photos -->
-  <TextView android:text="@string/contact"
-  			android:padding="15dip"
-  			android:textSize="18sp"
-  			android:layout_width="fill_parent"
-  			android:layout_height="wrap_content"/>
-    
-</RelativeLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- Screen Design for Photos -->
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="all"
+        android:padding="15dip"
+        android:text="If you have any queries, Please reach us at
+        			  
+        			  TOLL FREE NUMBER: 
+        			  1-800-11-5055 
+
+					  EMAIL: 
+					  support.ipcs@nic.in "
+        android:textSize="18sp" />
+
+    <TextView
+        android:text="Frequently Asked Questions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dip"
+        />
+
+</LinearLayout>
