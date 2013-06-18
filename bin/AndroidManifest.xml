@@ -35,14 +35,7 @@
                 </intent-filter> 
             </activity>
         
-        <activity 
-            android:name = "com.example.pcs.Dashboard"
-            android:label= "@string/app_name" >
-            <intent-filter>
-                <action android:name="com.example.pcs.DASHBOARD" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter> 
-            </activity>
+        
         
         <activity 
             android:name = "cargo.cargo_main"
@@ -309,10 +302,10 @@
         
         
         <activity 
-            android:name = "loggedin.dashboard" 
+            android:name = "loggedin.Dashboard" 
              android:label= "@string/app_name" >
             <intent-filter>
-                <action android:name="payment.DASHBOARD" />
+                <action android:name="loggedin.DASHBOARD" />
                 <category android:name="android.intent.category.DEFAULT"/>
                 </intent-filter>
                 </activity>

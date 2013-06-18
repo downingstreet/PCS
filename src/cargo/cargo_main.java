@@ -18,7 +18,7 @@ private String[] transport_list={"Application for Log Entry/Grant of Log Entry",
 	
 	protected void onCreate(Bundle savedInstanceState){
 			 super.onCreate(savedInstanceState);
-			 setContentView(R.layout.dashboard);
+			 setContentView(R.layout.arraylist);
 			 final ListView v = (ListView)findViewById(R.id.simpleList);
 				
 			 ArrayAdapter<String> adapter =

@@ -19,7 +19,7 @@ public class success extends Activity{
             @Override
             public void run() {
 
-                Intent i=new Intent("com.example.pcs.DASHBOARD");
+                Intent i=new Intent("loggedin.DASHBOARD");
                 startActivity(i);
             }
         }, 2000);

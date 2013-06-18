@@ -17,7 +17,7 @@ private String[] transport_list={"Removal Memo from Rake","Inland Way Bill","Pen
 	
 	protected void onCreate(Bundle savedInstanceState){
 			 super.onCreate(savedInstanceState);
-			 setContentView(R.layout.dashboard);
+			 setContentView(R.layout.arraylist);
 			 final ListView v = (ListView)findViewById(R.id.simpleList);
 				
 			 ArrayAdapter<String> adapter =

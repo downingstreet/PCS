@@ -17,7 +17,7 @@ private String[] vessel_list={"Vessel Profile List","Voyage List/VCN","Passenger
 	
 	protected void onCreate(Bundle savedInstanceState){
 			 super.onCreate(savedInstanceState);
-			 setContentView(R.layout.dashboard);
+			 setContentView(R.layout.arraylist);
 			 final ListView v = (ListView)findViewById(R.id.simpleList);
 				
 			 ArrayAdapter<String> adapter =

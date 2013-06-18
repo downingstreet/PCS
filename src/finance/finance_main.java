@@ -17,7 +17,7 @@ private String[] finance_list={"Assessment-Vessel Charges","Assessment-Stevedore
 	
 	protected void onCreate(Bundle savedInstanceState){
 			 super.onCreate(savedInstanceState);
-			 setContentView(R.layout.dashboard);
+			 setContentView(R.layout.arraylist);
 			 final ListView v = (ListView)findViewById(R.id.simpleList);
 				
 			 ArrayAdapter<String> adapter =
