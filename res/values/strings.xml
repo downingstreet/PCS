@@ -15,5 +15,16 @@
     <string name="pwd">Password</string>
     <string name="forget">Forget Password?</string>
     <string name="design">Designed By:</string>
+    
+    <string-array name="type_of_vessel_array">
+        <item>Container</item>
+        <item>Passenger</item>
+        <item>Other</item>
+    </string-array>
+     <string-array name="submission_port_array">
+        <item>Mumbai</item>
+        <item>Chennai</item>
+        <item>Other</item>
+    </string-array>
 
 </resources>

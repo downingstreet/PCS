@@ -27,14 +27,13 @@
             android:layout_weight="100">
 
             <TextView
-                android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Vessel Name:" 
                 android:layout_weight="60"/>
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/vessel_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="40"
@@ -43,20 +42,18 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" 
             android:layout_weight="100">
 
             <TextView
-                android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Type of Vessel:" 
                 android:layout_weight="60"/>
 
             <Spinner
-                android:id="@+id/spinner1"
+                android:id="@+id/spinner_type_of_vessel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" 
                 android:layout_weight="40"/>
@@ -64,20 +61,18 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="100" >
 
             <TextView
-                android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="IMO Number:" 
                 android:layout_weight="60"/>
 
             <EditText
-                android:id="@+id/editText4"
+                android:id="@+id/imo_number"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10" 
@@ -86,20 +81,18 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" 
             android:layout_weight="100">
 
             <TextView
-                android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ship Registry Certificate No:" 
                 android:layout_weight="60"/>
 
             <EditText
-                android:id="@+id/editText1"
+                android:id="@+id/sr_certificate_no"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10" 
@@ -108,20 +101,18 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" 
             android:layout_weight="100">
 
             <TextView
-                android:id="@+id/textView8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Agency Code:" 
                 android:layout_weight="60"/>
 
             <EditText
-                android:id="@+id/editText5"
+                android:id="@+id/agency_code"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10" 
@@ -130,20 +121,18 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" 
             android:layout_weight="100">
 
             <TextView
-                android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="60"
                 android:text="Owner&apos;s Name:" />
 
             <EditText
-                android:id="@+id/editText3"
+                android:id="@+id/owner_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="40"
@@ -153,20 +142,18 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" 
             android:layout_weight="100">
 
             <TextView
-                android:id="@+id/textView5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Owner&apos;s E-mail:" 
                 android:layout_weight="60"/>
 
             <EditText
-                android:id="@+id/editText6"
+                android:id="@+id/owner_email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -176,20 +163,18 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" 
             android:layout_weight="100">
 
             <TextView
-                android:id="@+id/textView10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Submission Port:" 
                 android:layout_weight="60"/>
 
             <Spinner
-                android:id="@+id/spinner2"
+                android:id="@+id/spinner_submission_port"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" 
                 android:layout_weight="40"/>
@@ -197,28 +182,26 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" 
             android:layout_weight="100">
 
             <TextView
-                android:id="@+id/textView11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="60"
                 android:text="Nationality:" />
 
-            <Spinner
-                android:id="@+id/spinner3"
+            <EditText
+                android:id="@+id/nationality"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" 
+                android:layout_height="wrap_content"
+                android:ems="10" 
                 android:layout_weight="40"/>
 
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" 
             >
@@ -228,13 +211,12 @@
                 android:layout_height="wrap_content" >
 
                 <TextView
-                    android:id="@+id/textView12"
                     android:layout_width="146dp"
                     android:layout_height="wrap_content"
                     android:text="Dimensions (in cubic metre):" />
 
                 <EditText
-                    android:id="@+id/editText18"
+                    android:id="@+id/vessel_length"
                     android:layout_width="49dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -242,14 +224,13 @@
                     android:inputType="numberSigned" />
 
                 <TextView
-                    android:id="@+id/textView25"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="*"
                     android:textAppearance="?android:attr/textAppearanceSmall" />
 
                 <EditText
-                    android:id="@+id/editText19"
+                    android:id="@+id/vessel_breadth"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -257,14 +238,13 @@
                     android:inputType="numberDecimal" />
 
                 <TextView
-                    android:id="@+id/textView26"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="*"
                     android:textAppearance="?android:attr/textAppearanceSmall" />
 
                 <EditText
-                    android:id="@+id/editText20"
+                    android:id="@+id/vessel_height"
                     android:layout_width="50dp"
                     android:layout_height="wrap_content"
                     android:hint="h"
@@ -276,13 +256,11 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" 
             android:layout_weight="100">
 
             <TextView
-                android:id="@+id/textView13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="60"
@@ -290,7 +268,7 @@
             
             
             <EditText
-                android:id="@+id/editText7"
+                android:id="@+id/vessel_weight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="40"
@@ -302,20 +280,18 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" 
             android:layout_weight="100">
 
             <TextView
-                android:id="@+id/textView14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="60"
                 android:text="Insurance Comp. Name:" />
 
             <EditText
-                android:id="@+id/editText8"
+                android:id="@+id/insurance_comp_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="40"
@@ -324,20 +300,18 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" 
             android:layout_weight="100">
 
             <TextView
-                android:id="@+id/textView15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="60"
                 android:text="Insurance Validity Date:" />
 
             <EditText
-                android:id="@+id/editText17"
+                android:id="@+id/insurance_validity_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="40"
@@ -347,20 +321,18 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow15"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" 
             android:layout_weight="100">
 
             <TextView
-                android:id="@+id/textView16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="60"
                 android:text="P&amp;I Club Name:" />
 
             <EditText
-                android:id="@+id/editText9"
+                android:id="@+id/pni_club_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="40"
@@ -369,20 +341,18 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow16"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" 
             android:layout_weight="100">
 
             <TextView
-                android:id="@+id/textView17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="60"
                 android:text="P&amp;I Insurance Valid Upto:" />
 
             <EditText
-                android:id="@+id/editText21"
+                android:id="@+id/pni_insur_val"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="40"
@@ -392,20 +362,18 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow17"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" 
             android:layout_weight="100">
 
             <TextView
-                android:id="@+id/textView18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="60"
                 android:text="No. of Vessel Gears:" />
 
             <EditText
-                android:id="@+id/editText10"
+                android:id="@+id/vessel_gears"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="40"
@@ -415,20 +383,18 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow18"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" 
             android:layout_weight="100">
 
             <TextView
-                android:id="@+id/textView19"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="60"
                 android:text="Engine Type:" />
 
             <EditText
-                android:id="@+id/editText11"
+                android:id="@+id/engine_type"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="40"
@@ -437,20 +403,18 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow19"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" 
             android:layout_weight="100">
 
             <TextView
-                android:id="@+id/textView20"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="60"
                 android:text="No. of Engines:" />
 
             <EditText
-                android:id="@+id/editText12"
+                android:id="@+id/no_engines"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="40"
@@ -460,7 +424,6 @@
         </TableRow>
 
         <TableRow
-            android:id="@+id/tableRow20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" 
             android:layout_weight="100"
@@ -472,7 +435,6 @@
                 android:layout_weight="100">
 
                 <TextView
-                    android:id="@+id/textView21"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="44"
