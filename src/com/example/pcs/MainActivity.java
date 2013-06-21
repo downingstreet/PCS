@@ -27,8 +27,6 @@ public class MainActivity extends SherlockFragmentActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		
-		MySQLiteHelper dbHelper = new MySQLiteHelper(getApplicationContext());
-
 		mViewPager = new ViewPager(this);
 		mViewPager.setId(R.id.pager);
 
