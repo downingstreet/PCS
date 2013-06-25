@@ -325,10 +325,7 @@ public class VesproModel {
 	}
 	
 	// Will be used by the ArrayAdapter in the ListView
-	  
-	  public String toString(String comment) {
-	    return comment;
-	  }
+
 
 	public long getId() {
 		return id;

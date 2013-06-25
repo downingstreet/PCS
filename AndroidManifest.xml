@@ -6,594 +6,591 @@
 
     <uses-sdk
         android:minSdkVersion="11"
-        android:targetSdkVersion="17" 
-        />
-    <uses-permission android:name="android.permission.INTERNET"/>
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-
         <activity
             android:name="com.example.pcs.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-        
-         <activity 
-            android:name = "com.example.pcs.success"
-            android:label= "@string/app_name" >
+        <activity
+            android:name="com.example.pcs.success"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="com.example.pcs.SUCCESS" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter> 
-            </activity>
-        
-        
-        
-        <activity 
-            android:name = "cargo.cargo_main"
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cargo.cargo_main"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="com.example.pcs.CARGO_MAIN" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter> 
-            </activity>
-            
-        <activity 
-            android:name = "cargo.agdord"
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cargo.agdord"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="cargo.AGDORD" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter> 
-            </activity>
-            
-        <activity 
-            android:name = "cargo.matrec"
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cargo.matrec"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="cargo.MATREC" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter> 
-            </activity>
-            
-        <activity 
-            android:name = "cargo.rloent_gloent"
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cargo.rloent_gloent"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="cargo.RLOENT_GLOENT" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter> 
-            </activity>
 
-        
-        <activity 
-            android:name = "container.container_main"
-            android:label= "@string/app_name" >
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="container.container_main"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="container.CONTAINER_MAIN" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter> 
-            </activity>
-            
-        <activity 
-            android:name = "container.carreq_carcfn" 
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="container.carreq_carcfn"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="container.CARREQ_CARCFN" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-            </activity>
-            
-        <activity 
-            android:name = "container.clpmsg" 
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="container.clpmsg"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="container.CLPMSG" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "container.coarri"
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="container.coarri"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="container.COARRI" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter> 
-            </activity>
-        
-        <activity 
-            android:name = "container.codeco" 
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="container.codeco"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="container.CALENDER" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-            </activity>
-        
-        <activity 
-            android:name = "container.coedor"
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="container.coedor"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="container.COEDOR" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter> 
-            </activity>
-        
-        <activity 
-            android:name = "container.cohaor" 
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="container.cohaor"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="container.COHAOR" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-            </activity>
-        
-        <activity 
-            android:name = "container.coparn" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="container.coparn"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="container.COPARN" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-            </activity>
-        
-        <activity 
-            android:name = "container.coprar" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="container.coprar"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="container.COPRAR" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-            </activity>
-        
-        <activity 
-            android:name = "container.costco" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="container.costco"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="container.COSTCO" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-            </activity>
-        
-        <activity 
-            android:name = "container.costor" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="container.costor"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="container.COSTOR" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "container.eicrep" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="container.eicrep"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="container.EICREP" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "container.gocofr" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="container.gocofr"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="container.GOCOFR" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "container.jobord" 
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="container.jobord"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="container.JOBORD" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        
-        <activity 
-            android:name = "finance.finance_main" 
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="finance.finance_main"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="finance.FINANCE_MAIN" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-            </activity>
-        
-        <activity 
-            android:name = "finance.cnfasc" 
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="finance.cnfasc"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="finance.CNFASC" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-            </activity>
-        
-        <activity 
-            android:name = "finance.dlysum" 
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="finance.dlysum"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="finance.DLYSUM" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-            </activity>
-        
-        <activity 
-            android:name = "finance.invoice_report" 
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="finance.invoice_report"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="finance.INVOICE_REPORT" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-            </activity>
-        
-        <activity 
-            android:name = "finance.invoice" 
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="finance.invoice"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="finance.INVOICE" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-            </activity>
-        
-        <activity 
-            android:name = "finance.pdabal" 
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="finance.pdabal"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="finance.PDABAL" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-            </activity>
-        
-        <activity 
-            android:name = "finance.reqcac" 
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="finance.reqcac"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="finance.REQCAC" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-            </activity>
-        
-        <activity 
-            android:name = "finance.reqcoc" 
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="finance.reqcoc"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="finance.REQCOC" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-            </activity>
-        
-        <activity 
-            android:name = "finance.reqctc" 
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="finance.reqctc"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="finance.REQCTC" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-            </activity>
-        
-        <activity 
-            android:name = "finance.reqsac" 
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="finance.reqsac"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="finance.REQSAC" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-            </activity>
-        
-        <activity 
-            android:name = "finance.reqvac" 
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="finance.reqvac"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="finance.REQVAC" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-            </activity>
-        
-        
-        <activity 
-            android:name = "loggedin.Dashboard" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="loggedin.Dashboard"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="loggedin.DASHBOARD" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        
-        <activity 
-            android:name = "payment.payment_main" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="payment.payment_main"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="payment.PAYMENT_MAIN" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "payment.make_pay" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="payment.make_pay"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="payment.MAKE_PAY" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-   			    </activity>
-        
-        <activity 
-            android:name = "payment.top_up" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="payment.top_up"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="payment.TOP_UP" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-            </activity>
-        
-        <activity 
-            android:name = "payment.verify" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="payment.verify"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="payment.VERIFY" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        
-        <activity 
-            android:name = "transport.transport_main" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="transport.transport_main"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="transport.TRANSPORT_MAIN" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "transport.contpe" 
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="transport.contpe"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="transport.CONTPE" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "transport.copino" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="transport.copino"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="transport.COPINO" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "transport.railsc" 
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="transport.railsc"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="transport.RAILSC" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "transport.rmlmem" 
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="transport.rmlmem"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="transport.RMLMEM" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        
-        <activity 
-            android:name = "upload.upload_main" 
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="upload.upload_main"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="upload.UPLOAD_MAIN" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-            </activity>
-        
-        
-        <activity 
-            android:name = "vcn.vcn_main" 
-            android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vcn.vcn_main"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="vcn.VCN_MAIN" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        
-        <activity 
-            android:name = "vessel.vessel_main" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vessel.CurrentList"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="vessel.CURRENTLIST" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vessel.vessel_main"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="vessel.VESSEL_MAIN" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "vessel.agnchg" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vessel.agnchg"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="vessel.AGNCHG" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-            	</activity>
-        
-        <activity 
-            android:name = "vessel.baplie" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vessel.baplie"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="vessel.BAPLIE" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "vessel.berman_beralt" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vessel.berman_beralt"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="vessel.BERMAN_BERALT" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "vessel.calinf_calinv" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vessel.calinf_calinv"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="vessel.CALINF_CALVIN" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "vessel.etaetd_acktad" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vessel.etaetd_acktad"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="vessel.ETAETD_ACKTAD" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "vessel.iftdgn_dgnack" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vessel.iftdgn_dgnack"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="vessel.IFTDGN_DGNACK" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "vessel.mmd" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vessel.mmd"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="vessel.MMD" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "vessel.movins" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vessel.movins"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="vessel.MOVINS" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "vessel.paisps" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vessel.paisps"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="vessel.PAISPS" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "vessel.paxlst" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vessel.paxlst"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="vessel.PAXLST" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "vessel.pho" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vessel.pho"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="vessel.PHO" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "vessel.pltmem_ackplm" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vessel.pltmem_ackplm"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="vessel.PLTMEM_ACKPLM" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "vessel.resreq_alores" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vessel.resreq_alores"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="vessel.RESREQ_ALORES" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "vessel.stopln" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vessel.stopln"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="vessel.STOPLN" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "vessel.stpcgo" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vessel.stpcgo"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="vessel.STPCGO" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "vessel.tpfrep" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vessel.tpfrep"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="vessel.TPFREP" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "vessel.unbert" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vessel.unbert"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="vessel.UNBERT" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "vessel.vesdep" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vessel.vesdep"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="vessel.VESDEP" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-        
-        <activity 
-            android:name = "vessel.vespro" 
-             android:label= "@string/app_name" >
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vessel.vespro"
+            android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="vessel.VESPRO" />
-                <category android:name="android.intent.category.DEFAULT"/>
-                </intent-filter>
-                </activity>
-                
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>
