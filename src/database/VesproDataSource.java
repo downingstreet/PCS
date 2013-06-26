@@ -16,7 +16,7 @@ public class VesproDataSource {
 
 	private SQLiteDatabase database;
 	private MySQLiteHelper dbHelper;
-	
+
 	private String[] allColumns = { MySQLiteHelper.COLUMN_ID,
 			MySQLiteHelper.COLUMN_IMO_NUMBER,
 			MySQLiteHelper.COLUMN_VESSEL_NAME,
@@ -59,12 +59,12 @@ public class VesproDataSource {
 		//values.put(allColumns[0],insertId);
 		for (; i < allColumns.length && j < comment.length ; i++ , j++) {
 			values.put(allColumns[i], comment[j]);
-			
+
 		}
 		insertId = database.insert(MySQLiteHelper.TABLE_TPCS_VESSEL, null, values);
 		cursor = database.query(MySQLiteHelper.TABLE_TPCS_VESSEL, allColumns, 
 				MySQLiteHelper.COLUMN_ID + " = " + insertId, null, null, null, null);
-		
+
 		cursor.moveToFirst();
 		VesproModel newComment = cursorToComment(cursor);
 		cursor.close();
@@ -75,7 +75,7 @@ public class VesproDataSource {
 	    System.out.println("Comment deleted with id: " + id);
 	    database.delete(MySQLiteHelper.TABLE_TPCS_VESSEL, MySQLiteHelper.COLUMN_ID + " = " + id, null);
 	  }
-	
+
 	public List<VesproModel> getAllComments() {
 	    List<VesproModel> comments = new ArrayList<VesproModel>();
 
@@ -89,7 +89,7 @@ public class VesproDataSource {
 	    cursor.close();
 	    return comments;
 	  }
-	
+
 	private VesproModel cursorToComment(Cursor cursor) {
 	    VesproModel comment = new VesproModel();
 	    Log.d("cursorToComment", "Before if cursorToComment");
@@ -120,8 +120,8 @@ public class VesproDataSource {
 	    else Log.d("cursorToComment", "NULL evaluation");
 	    return comment;
 	  }
-	
-	
+
+
 
 
 }
