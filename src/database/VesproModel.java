@@ -1,6 +1,13 @@
 package database;
 
 public class VesproModel {
+	
+	
+	public VesproModel() {
+	}
+
+
+
 	private long id;
 	private String imo_number;
 	private String vessel_name;
@@ -330,10 +337,13 @@ public class VesproModel {
 	    return  ;
 	}
 */
-
+	
+	
 	public long getId() {
 		return id;
 	}
+
+
 
 	public void setId(long id) {
 		this.id = id;
