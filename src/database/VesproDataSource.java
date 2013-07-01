@@ -17,27 +17,27 @@ public class VesproDataSource {
 	private SQLiteDatabase database;
 	private MySQLiteHelper dbHelper;
 
-	private String[] allColumns = { MySQLiteHelper.COLUMN_ID,
-			MySQLiteHelper.COLUMN_IMO_NUMBER,
-			MySQLiteHelper.COLUMN_VESSEL_NAME,
-			MySQLiteHelper.COLUMN_VESSEL_TYPE,
-			MySQLiteHelper.COLUMN_SR_CERTIFICATE_NO,
-			MySQLiteHelper.COLUMN_AGENCY_CODE,
-			MySQLiteHelper.COLUMN_OWNER_NAME,
-			MySQLiteHelper.COLUMN_OWNER_EMAIL,
-			MySQLiteHelper.COLUMN_PORT_OF_SUBMISSION,
-			MySQLiteHelper.COLUMN_NATIONALITY,
-			MySQLiteHelper.COLUMN_VESSEL_HEIGHT,
-			MySQLiteHelper.COLUMN_VESSEL_BREADTH,
-			MySQLiteHelper.COLUMN_VESSEL_LENGTH,
-			MySQLiteHelper.COLUMN_VESSEL_WEIGHT,
-			MySQLiteHelper.COLUMN_INSURANCE_COMPANY,
-			MySQLiteHelper.COLUMN_INSURANCE_VALIDITY,
-			MySQLiteHelper.COLUMN_PNI_CLUB,
-			MySQLiteHelper.COLUMN_PNI_INSURANCE_VALIDITY,
-			MySQLiteHelper.COLUMN_VESSEL_GEARS,
-			MySQLiteHelper.COLUMN_ENGINE_TYPE, 
-			MySQLiteHelper.COLUMN_NO_ENGINES }; //21
+	private String[] allColumns = { VesproModel.COLUMN_ID,
+			VesproModel.COLUMN_IMO_NUMBER,
+			VesproModel.COLUMN_VESSEL_NAME,
+			VesproModel.COLUMN_VESSEL_TYPE,
+			VesproModel.COLUMN_SR_CERTIFICATE_NO,
+			VesproModel.COLUMN_AGENCY_CODE,
+			VesproModel.COLUMN_OWNER_NAME,
+			VesproModel.COLUMN_OWNER_EMAIL,
+			VesproModel.COLUMN_PORT_OF_SUBMISSION,
+			VesproModel.COLUMN_NATIONALITY,
+			VesproModel.COLUMN_VESSEL_HEIGHT,
+			VesproModel.COLUMN_VESSEL_BREADTH,
+			VesproModel.COLUMN_VESSEL_LENGTH,
+			VesproModel.COLUMN_VESSEL_WEIGHT,
+			VesproModel.COLUMN_INSURANCE_COMPANY,
+			VesproModel.COLUMN_INSURANCE_VALIDITY,
+			VesproModel.COLUMN_PNI_CLUB,
+			VesproModel.COLUMN_PNI_INSURANCE_VALIDITY,
+			VesproModel.COLUMN_VESSEL_GEARS,
+			VesproModel.COLUMN_ENGINE_TYPE, 
+			VesproModel.COLUMN_NO_ENGINES }; //21
 
 	public VesproDataSource(Context context) {
 		dbHelper = new MySQLiteHelper(context);
@@ -61,9 +61,9 @@ public class VesproDataSource {
 			values.put(allColumns[i], comment[j]);
 
 		}
-		insertId = database.insert(MySQLiteHelper.TABLE_TPCS_VESSEL, null, values);
-		cursor = database.query(MySQLiteHelper.TABLE_TPCS_VESSEL, allColumns, 
-				MySQLiteHelper.COLUMN_ID + " = " + insertId, null, null, null, null);
+		insertId = database.insert(VesproModel.TABLE_TPCS_VESSEL, null, values);
+		cursor = database.query(VesproModel.TABLE_TPCS_VESSEL, allColumns, 
+				VesproModel.COLUMN_ID + " = " + insertId, null, null, null, null);
 
 		cursor.moveToFirst();
 		VesproModel newComment = cursorToComment(cursor);
@@ -73,13 +73,13 @@ public class VesproDataSource {
 	public void deleteComment(VesproModel comment) {
 	    long id = comment.getId();
 	    System.out.println("Comment deleted with id: " + id);
-	    database.delete(MySQLiteHelper.TABLE_TPCS_VESSEL, MySQLiteHelper.COLUMN_ID + " = " + id, null);
+	    database.delete(VesproModel.TABLE_TPCS_VESSEL, VesproModel.COLUMN_ID + " = " + id, null);
 	  }
 
 	public List<VesproModel> getAllComments() {
 	    List<VesproModel> comments = new ArrayList<VesproModel>();
 
-	    Cursor cursor = database.query(MySQLiteHelper.TABLE_TPCS_VESSEL, allColumns, null, null, null, null, null);
+	    Cursor cursor = database.query(VesproModel.TABLE_TPCS_VESSEL, allColumns, null, null, null, null, null);
 	    cursor.moveToFirst();
 	    while (!cursor.isAfterLast()) {
 	      VesproModel comment = cursorToComment(cursor);

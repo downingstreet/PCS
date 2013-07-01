@@ -71,7 +71,7 @@
                     android:text="Flag:" />
 
                 <Spinner
-                    android:id="@+id/spinner1"
+                    android:id="@+id/spinner_port_of_sub"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" 
                     android:layout_weight="1"/>

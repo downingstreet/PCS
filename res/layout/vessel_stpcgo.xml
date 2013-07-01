@@ -48,7 +48,7 @@
                     android:layout_weight="1"/>
 
                 <EditText
-                    android:id="@+id/editText1"
+                    android:id="@+id/text_voyage_no"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10" 
@@ -93,7 +93,7 @@
                     android:text="IMO Number:" />
 
                 <EditText
-                    android:id="@+id/editText3"
+                    android:id="@+id/text_imo_no"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10" 
@@ -114,7 +114,7 @@
                     android:text="Terminal Code" />
 
                 <Spinner
-                    android:id="@+id/spinner1"
+                    android:id="@+id/spinner_port_of_sub"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" 
                     android:layout_weight="1"/>

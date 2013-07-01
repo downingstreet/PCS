@@ -70,7 +70,7 @@
                     android:layout_weight="1"/>
 
                 <EditText
-                    android:id="@+id/editText3"
+                    android:id="@+id/text_imo_no"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10" 
@@ -199,7 +199,7 @@
                     android:layout_weight="1"/>
 
                 <Spinner
-                    android:id="@+id/spinner1"
+                    android:id="@+id/spinner_port_of_sub"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" 
                     android:layout_weight="1"/>
@@ -219,7 +219,7 @@
                     android:layout_weight="1"/>
 
                 <Spinner
-                    android:id="@+id/spinner2"
+                    android:id="@+id/spinner_purpose_of_visit"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" 
                     android:layout_weight="1"/>
@@ -253,7 +253,7 @@
                     android:layout_weight="1"/>
 
                 <Spinner
-                    android:id="@+id/spinner3"
+                    android:id="@+id/spinner_voyage_type"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" 
                     android:layout_weight="1"/>
@@ -273,7 +273,7 @@
                     android:layout_weight="1"/>
 
                 <EditText
-                    android:id="@+id/editText9"
+                    android:id="@+id/text_shipping_agent_code"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -352,7 +352,7 @@
                     android:layout_weight="1"/>
 
                 <Spinner
-                    android:id="@+id/spinner4"
+                    android:id="@+id/spinner_status"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" 
                     android:layout_weight="1"/>
@@ -449,7 +449,7 @@
                     android:layout_weight="1">
 
                     <EditText
-                        android:id="@+id/editText1"
+                        android:id="@+id/text_voyage_no"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ems="10"
