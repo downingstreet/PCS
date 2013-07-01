@@ -49,3 +49,8 @@ proguard/
 *.iws
 .idea/
 
+*/bin
+*/gen
+*/build-private.properties
+*/local.properties
+*/release
