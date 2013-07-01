@@ -32,12 +32,7 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
 	public static final String COLUMN_VESSEL_GEARS="vessel_gears";
 	public static final String COLUMN_ENGINE_TYPE="engine_type";
 	public static final String COLUMN_NO_ENGINES="no_engines";
-		
-	public MySQLiteHelper(Context context, String name, CursorFactory factory,
-			int version) {
-		super(context, name, factory, version);
-		// TODO Auto-generated constructor stub
-	}
+	
 
 	public MySQLiteHelper(Context context) {
 		super(context, DATABASE_NAME, null, DATABASE_VERSION);

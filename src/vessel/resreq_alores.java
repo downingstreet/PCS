@@ -1,5 +1,19 @@
 package vessel;
 
-public class resreq_alores {
+import com.example.pcs.R;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class resreq_alores extends Activity{
+
+	@Override
+	protected void onCreate(Bundle savedInstanceState) {
+		// TODO Auto-generated method stub
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.vessel_resreq_alores);
+	}
+	
+	
 
 }

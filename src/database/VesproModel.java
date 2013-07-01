@@ -1,12 +1,6 @@
 package database;
 
 public class VesproModel {
-	
-	
-	public VesproModel() {
-	}
-
-
 
 	private long id;
 	private String imo_number;
@@ -29,7 +23,6 @@ public class VesproModel {
 	private String vessel_gears;
 	private String engine_type;
 	private int no_engines;
-
 
 	/**
 	 * @return the imo_number
@@ -330,20 +323,23 @@ public class VesproModel {
 	public void setNo_engines(int no_engines) {
 		this.no_engines = no_engines;
 	}
-	
+
 	// Will be used by the ArrayAdapter in the ListView
-	/*@Override
-	public String toString(){
-	    return  ;
+	@Override
+	public String toString() {
+		return id + " " + imo_number + " " + vessel_name + " " + vessel_type
+				+ " " + sr_certificate_no + " " + agency_code + " "
+				+ owner_name + " " + owner_email + " " + port_of_submission
+				+ " " + nationality + " " + vessel_height + " "
+				+ vessel_breadth + " " + vessel_length + " " + vessel_weight
+				+ " " + insurance_company + " " + insurance_validity + " "
+				+ pni_club + " " + pni_insurance_validity + " " + vessel_gears
+				+ " " + engine_type + " " + no_engines;
 	}
-*/
-	
-	
+
 	public long getId() {
 		return id;
 	}
-
-
 
 	public void setId(long id) {
 		this.id = id;

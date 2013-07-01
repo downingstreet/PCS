@@ -68,8 +68,7 @@ public class vespro extends Activity {
 				android.R.layout.simple_spinner_item);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		vessel_type.setAdapter(adapter);
-		vessel_type
-				.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+		vessel_type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 					public void onItemSelected(AdapterView<?> parent,
 							View view, int pos, long id) {
 						Object item = parent.getItemAtPosition(pos);

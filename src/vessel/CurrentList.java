@@ -1,68 +1,51 @@
 package vessel;
 
-import java.util.ArrayList;
+
+
 import java.util.List;
 
 import com.example.pcs.R;
 
-import database.ItemAdapter;
 import database.VesproDataSource;
 import database.VesproModel;
 import android.app.ListActivity;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
+import android.widget.ArrayAdapter;
+
 
 public class CurrentList extends ListActivity {
-	private ArrayList<VesproModel> values = new ArrayList<VesproModel>();
-	private VesproDataSource dsrc;
-	private Runnable viewParts;
-	private ItemAdapter m_adapter;
 
-	
+	 private VesproDataSource datasource;
 
-	@Override
-	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
+	  @Override
+	  public void onCreate(Bundle savedInstanceState) {
+	    super.onCreate(savedInstanceState);
+	    setContentView(R.layout.currentlist);
 
-		super.onCreate(savedInstanceState);
-		setContentView(R.layout.currentlist);
+	    datasource = new VesproDataSource(this);
+	    datasource.open();
 
-		dsrc = new VesproDataSource(this);
-		dsrc.open();
-		m_adapter = new ItemAdapter(this, R.layout.list_item, values);
-		setListAdapter(m_adapter);
-	
-		viewParts = new Runnable() {
-			
-			@Override
-			public void run() {
-				// TODO Auto-generated method stub
-				handler.sendEmptyMessage(0);
-			}
-		};
-		
-		Thread thread =  new Thread(null, viewParts, "MagentoBackground");
-        thread.start();
-	}
-        
-        private Handler handler = new Handler()
-		 {
-			public void handleMessage(Message msg)
-			{
-				// create some objects
-				// here is where you could also request data from a server
-				// and then create objects from that data.
-				//m_parts.add(new Item("MyItemName", "This is item #1", 0));
-				//m_parts.add(new Item("MyItemName #2", "This is item #2", 0));
-				List<VesproModel> values = dsrc.getAllComments();
-				m_adapter = new ItemAdapter(CurrentList.this, R.layout.list_item, values);
+	    List<VesproModel> values = datasource.getAllComments();
 
-				// display the list.
-		        setListAdapter(m_adapter);
-			}
-		};
+	    // Use the SimpleCursorAdapter to show the
+	    // elements in a ListView
+	    ArrayAdapter<VesproModel> adapter = new ArrayAdapter<VesproModel>(this,
+	        android.R.layout.simple_list_item_1, values);
+	    setListAdapter(adapter);
+	  }
+	  
+	  @Override
+	  protected void onResume() {
+	    datasource.open();
+	    super.onResume();
+	  }
 
-	}
+	  @Override
+	  protected void onPause() {
+	    datasource.close();
+	    super.onPause();
+	  }
+
+}
 
 
