@@ -1,8 +1,9 @@
 package database;
 
+import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteDatabase.CursorFactory;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
 
@@ -18,8 +19,9 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
 	@Override
 	public void onCreate(SQLiteDatabase database) {
 		// TODO Auto-generated method stub
+		Log.d("MySQLiteHelper.java", "onCreate vessel profile");
 		database.execSQL(VesselProfileTable.CREATE_VESSEL_PROFILE);
-		database.execSQL(VoyageDetailsTable.CREATE_VOYAGE_DETAILS);
+		//database.execSQL(VoyageDetailsTable.CREATE_VOYAGE_DETAILS);
 	}
 
 	@Override
@@ -33,6 +35,43 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
 		onCreate(db);
 
 	}
+	
+	// adding row to table
+		public long addVesselProfile(String allValues[]) {
+			Log.d("MySQLiteHelper.java", "begin addVesselProfile");
+			// CREATE A CONTENTVALUE OBJECT
+			ContentValues cv = new ContentValues();
+			for (int i = 0; i < VesselProfileTable.allColumns.length; i++) {
+				Log.d("MySQLiteHelper.java", "inside for loop addVesselProfile");
+				cv.put(VesselProfileTable.allColumns[i], allValues[i]);
+			}
+
+			// RETRIEVE WRITEABLE DATABASE AND INSERT
+			SQLiteDatabase sd = getWritableDatabase();
+			long result = sd.insert(VesselProfileTable.TABLE_NAME, null, cv);
+			Log.d("MySQLiteHelper.java", "end addVesselProfile");
+			return result;
+		}
+
+		// fetch all rows from vessel profile table
+		public Cursor getVesselProfile(String columns[]) {
+			SQLiteDatabase sd = getWritableDatabase();
+			// QUERY CLASS MAP FOR STUDENTS IN COURSE
+			Cursor c = sd.query(VesselProfileTable.TABLE_NAME, columns, null, null, null, null, null);
+			return c;
+		}
+
+		// removing vessel profile with particular id
+		public boolean removeVesselProfile(int column_id) {
+			SQLiteDatabase sd = getWritableDatabase();
+			String[] whereArgs = new String[] { String.valueOf(column_id) };
+
+			int result = sd.delete(VesselProfileTable.TABLE_NAME, VesselProfileTable.COLUMN_ID + "= ? ",
+					whereArgs);
+			return (result > 0);
+		}
+
+	
 	
 	
 

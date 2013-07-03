@@ -1,16 +1,13 @@
 package vessel;
 
-import java.util.List;
-
 import com.example.pcs.R;
 import com.example.pcs.success;
 
-import database.VesproDataSource;
-import database.VesproModel;
-
+import database.MySQLiteHelper;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.AdapterView;
@@ -22,13 +19,14 @@ import android.widget.Spinner;
 public class vespro extends Activity {
 
 	Button submit, save, cancel;
+
 	EditText vessel_name, imo_number, sr_certificate_no, agency_code,
 			owner_name, owner_email, nationality, vessel_weight, vessel_length,
 			vessel_breadth, vessel_height, insurance_comp_name,
 			ins_validity_date, pi_name, pi_date, vessel_gears, engine_type,
 			no_engines;
+
 	Spinner vessel_type, sub_port;
-	private VesproDataSource datasource;
 	protected String vessel_type_item;
 	protected String sub_port_item;
 
@@ -38,10 +36,7 @@ public class vespro extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.vespro);
 
-		datasource = new VesproDataSource(this);
-		datasource.open();
-
-		List<VesproModel> values = datasource.getAllComments();
+		final MySQLiteHelper sh = new MySQLiteHelper(this);
 
 		vessel_name = (EditText) findViewById(R.id.vessel_name);
 		imo_number = (EditText) findViewById(R.id.imo_number);
@@ -68,7 +63,8 @@ public class vespro extends Activity {
 				android.R.layout.simple_spinner_item);
 		adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		vessel_type.setAdapter(adapter);
-		vessel_type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+		vessel_type
+				.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
 					public void onItemSelected(AdapterView<?> parent,
 							View view, int pos, long id) {
 						Object item = parent.getItemAtPosition(pos);
@@ -100,16 +96,14 @@ public class vespro extends Activity {
 		submit.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				VesproModel comment = null;
-				String[] comments = new String[] {
+
+				String[] allValues = new String[] {
 						imo_number.getText().toString(),
-						vessel_name.getText().toString(), 
-						vessel_type_item,
+						vessel_name.getText().toString(), vessel_type_item,
 						sr_certificate_no.getText().toString(),
 						agency_code.getText().toString(),
 						owner_name.getText().toString(),
-						owner_email.getText().toString(), 
-						sub_port_item,
+						owner_email.getText().toString(), sub_port_item,
 						nationality.getText().toString(),
 						vessel_height.getText().toString(),
 						vessel_breadth.getText().toString(),
@@ -121,11 +115,20 @@ public class vespro extends Activity {
 						pi_date.getText().toString(),
 						vessel_gears.getText().toString(),
 						engine_type.getText().toString(),
-						no_engines.getText().toString() }; //20
-				
-				comment = datasource.createComment(comments);
-				Intent success = new Intent(vespro.this, success.class);
-				startActivity(success);
+						no_engines.getText().toString() }; // 20
+
+				try {
+					long result = sh.addVesselProfile(allValues);
+					Intent success = new Intent(vespro.this, success.class);
+					startActivity(success);
+				}
+
+				catch (Exception e) {
+					// TODO: handle exception
+					Log.d("vespro.java",
+							"failed to add values to vessel profile table");
+				}
+
 			}
 		});
 

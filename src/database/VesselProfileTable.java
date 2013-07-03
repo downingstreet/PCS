@@ -1,8 +1,7 @@
 package database;
 
 public class VesselProfileTable {
-
-	public static final String TABLE_NAME = "TPCS_VESSEl";
+	public static final String TABLE_NAME = "TPCS_VESSEL";
 
 	public static final String COLUMN_ID = "_id";
 	public static final String COLUMN_IMO_NUMBER = "imo_number";
@@ -26,6 +25,11 @@ public class VesselProfileTable {
 	public static final String COLUMN_ENGINE_TYPE = "engine_type";
 	public static final String COLUMN_NO_ENGINES = "no_engines";
 	
+	public static final String allColumns [] = new String[] {COLUMN_IMO_NUMBER,COLUMN_VESSEL_NAME,COLUMN_VESSEL_TYPE,COLUMN_SR_CERTIFICATE_NO,
+			COLUMN_AGENCY_CODE , COLUMN_OWNER_NAME , COLUMN_OWNER_EMAIL, COLUMN_PORT_OF_SUBMISSION , COLUMN_NATIONALITY, COLUMN_VESSEL_HEIGHT, COLUMN_VESSEL_BREADTH,
+			COLUMN_VESSEL_LENGTH, COLUMN_VESSEL_WEIGHT, COLUMN_INSURANCE_COMPANY, COLUMN_INSURANCE_VALIDITY, COLUMN_PNI_CLUB ,COLUMN_PNI_INSURANCE_VALIDITY,
+			COLUMN_VESSEL_GEARS, COLUMN_ENGINE_TYPE , COLUMN_NO_ENGINES};
+	
 	public static final String  CREATE_VESSEL_PROFILE = "create table " + TABLE_NAME + "("+ 
 		       COLUMN_ID + " integer primary key autoincrement, " +
 		       COLUMN_IMO_NUMBER +" text not null, " +
@@ -47,5 +51,6 @@ public class VesselProfileTable {
 		       COLUMN_PNI_INSURANCE_VALIDITY + " text not null," +
 		       COLUMN_VESSEL_GEARS + " text not null, " +
 		       COLUMN_ENGINE_TYPE + " text not null, " +
-			   COLUMN_NO_ENGINES + " integer not null);";
+			   COLUMN_NO_ENGINES + " integer not null );";
+	
 }
