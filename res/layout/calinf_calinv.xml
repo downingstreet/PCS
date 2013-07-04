@@ -35,7 +35,7 @@
                 android:text="Voyage Number:" />
 
             <EditText
-                android:id="@+id/text_voyage_no"
+                android:id="@+id/editText1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="50"
@@ -57,7 +57,7 @@
                 android:text="Port of Submission:" />
 
             <Spinner
-                android:id="@+id/spinner_port_of_sub"
+                android:id="@+id/spinner1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" 
                 android:layout_weight="50"
@@ -79,7 +79,7 @@
                 android:text="IMO Number:" />
 
             <EditText
-                android:id="@+id/text_imo_no"
+                android:id="@+id/text_arrival_date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="50"
@@ -101,7 +101,7 @@
                 android:text="Shipping Agent Code:" />
             
              <EditText
-                 android:id="@+id/text_shipping_agent_code"
+                 android:id="@+id/editText9"
                  android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
                  android:layout_weight="50"
@@ -153,7 +153,7 @@
                 android:text="Purpose of Visit:" />
 
             <Spinner
-                android:id="@+id/spinner_purpose_of_visit"
+                android:id="@+id/spinner2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" 
                 android:layout_weight="50"/>
@@ -174,7 +174,7 @@
                 android:text="Voyage Type:" />
 
             <Spinner
-                android:id="@+id/spinner_voyage_type"
+                android:id="@+id/spinner3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" 
                 android:layout_weight="50"/>
@@ -195,7 +195,7 @@
                 android:text="Status:" />
 
             <Spinner
-                android:id="@+id/spinner_status"
+                android:id="@+id/spinner4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" 
                 android:layout_weight="50"/>

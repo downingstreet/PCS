@@ -1,8 +1,8 @@
 package vessel;
 
+import com.actionbarsherlock.app.SherlockActivity;
 import com.example.pcs.R;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.AdapterView.OnItemClickListener;
 
-public class vessel_main extends Activity {
+public class vessel_main extends SherlockActivity {
 
 	private String[] vessel_list = { "Current List", "Vessel Profile List",
 			"Voyage List/VCN", "Passengers/ Crew List",

@@ -30,7 +30,7 @@
                     android:id="@+id/textView10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Crew/Passenger Details"
+                    android:text="Vessel Details"
                     android:textAppearance="?android:attr/textAppearanceSmall" />
 
             </TableRow>
@@ -48,7 +48,7 @@
                     android:layout_weight="1"/>
 
                 <EditText
-                    android:id="@+id/text_voyage_no"
+                    android:id="@+id/text_vcn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10" 
@@ -56,6 +56,21 @@
 
                     <requestFocus />
                 </EditText>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:background="@android:color/holo_blue_light">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Container Details"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
 
             </TableRow>
 
@@ -72,12 +87,27 @@
                     android:text="No. of Containers:" />
 
                 <EditText
-                    android:id="@+id/editText2"
+                    android:id="@+id/text_no_container"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:inputType="textPersonName" 
+                    android:inputType="number" 
                     android:layout_weight="1"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" 
+                android:background="@android:color/holo_blue_light">
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Container Information"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
 
             </TableRow>
 
@@ -90,14 +120,13 @@
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Country of Issue(Passport):" 
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:text="Equipmet Status Code:" />
 
-                <EditText
-                    android:id="@+id/text_imo_no"
+                <Spinner
+                    android:id="@+id/spin_status"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10" 
+                    android:layout_height="wrap_content" 
                     android:layout_weight="1"/>
 
             </TableRow>
@@ -111,11 +140,11 @@
                     android:id="@+id/textView5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Identification Mark:" 
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:text="Container Agent Code:" />
 
                 <EditText
-                    android:id="@+id/editText4"
+                    android:id="@+id/text_agent_code"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10" 
@@ -132,11 +161,11 @@
                     android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="VISA No:" 
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:text="Container Number:" />
 
                 <EditText
-                    android:id="@+id/editText7"
+                    android:id="@+id/text_container_no"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10" 
@@ -153,15 +182,13 @@
                     android:id="@+id/textView7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="VISA Validity Date:" 
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:text="ISO Code of Container:" />
 
-                <EditText
-                    android:id="@+id/editText5"
+                <Spinner
+                    android:id="@+id/spin_iso"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="date" 
+                    android:layout_height="wrap_content" 
                     android:layout_weight="1"/>
 
             </TableRow>
@@ -175,13 +202,14 @@
                     android:id="@+id/textView8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nationality:" 
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:text="Port of Origin:" />
 
-                <Spinner
-                    android:id="@+id/spinner_port_of_sub"
+                <EditText
+                    android:id="@+id/text_origin_port"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" 
+                    android:layout_height="wrap_content"
+                    android:ems="10" 
                     android:layout_weight="1"/>
 
             </TableRow>
@@ -195,11 +223,74 @@
                     android:id="@+id/textView9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Contact Details:" 
+                    android:layout_weight="1"
+                    android:text="Port of Loading:" />
+
+                <EditText
+                    android:id="@+id/text_loading_port"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10" 
+                    android:layout_weight="1"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Type of Cargo:" 
+                    android:layout_weight="1"/>
+
+                <Spinner
+                    android:id="@+id/spin_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" 
+                    android:layout_weight="1"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Dimension Details:" 
                     android:layout_weight="1"/>
 
                 <EditText
-                    android:id="@+id/editText6"
+                    android:id="@+id/text_dim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textMultiLine" 
+                    android:layout_weight="1"/>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Handling Details:" 
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/text_handling"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"

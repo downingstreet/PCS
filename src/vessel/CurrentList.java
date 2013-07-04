@@ -1,11 +1,15 @@
 package vessel;
 
 import com.example.pcs.R;
+import com.example.pcs.success;
 
 import database.MySQLiteHelper;
 import database.VesselProfileTable;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.CursorIndexOutOfBoundsException;
 import android.os.Bundle;
@@ -13,6 +17,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -72,12 +77,93 @@ public class CurrentList extends Activity implements OnClickListener {
 		// TODO Auto-generated method stub
 		switch(v.getId()){
 		
-		case R.id.button_delete : 
+		case R.id.button_delete :AlertDialog.Builder deleteAlert = new AlertDialog.Builder(this);
+								 deleteAlert.setTitle("Enter row id");
+								 final EditText deleteInput = new EditText(this);
+								 deleteAlert.setView(deleteInput);
+								 
+								 deleteAlert.setPositiveButton("Delete entry", new DialogInterface.OnClickListener() {
+									
+									@Override
+									public void onClick(DialogInterface dialog, int which) {
+										// TODO Auto-generated method stub
+									
+									try{
+										int value = Integer.parseInt(deleteInput.getText().toString());
+										Boolean result = helper.removeVesselProfile(value);
+										Toast.makeText(getApplicationContext(), "deleted row with id " + deleteInput.getText().toString(), Toast.LENGTH_SHORT).show();
+										Log.d("after removeVessel", result.toString());
+									}catch(Exception e){
+										Log.d("CurrentList Delete entry", "removeVessel failed");
+										e.printStackTrace();
+									}
+									}
+								});
+								 
+								 deleteAlert.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+									
+									@Override
+									public void onClick(DialogInterface dialog, int which) {
+										// TODO Auto-generated method stub
+									return;	
+									}
+								});
+								 deleteAlert.show();
+								 
+								 
+								 
+								 
 								break;
 		
-		case R.id.button_update:Toast t = new Toast(getApplicationContext());
-								t.makeText(getApplicationContext(), "Updation", );
-								t.show();
+		case R.id.button_update:
+			/*AlertDialog.Builder updateAlert = new AlertDialog.Builder(this);
+			 updateAlert.setTitle("Enter row id");
+			 final EditText updateInput = new EditText(this);
+			 updateAlert.setView(updateInput);
+			 
+			 updateAlert.setPositiveButton("Update entry", new DialogInterface.OnClickListener() {
+				
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					// TODO Auto-generated method stub
+				
+				try{
+					int value = Integer.parseInt(updateInput.getText().toString());
+					Cursor cursor = helper.getRowVesselProfile(value);
+					
+					// cursor pointss to row .. now add values to Contentvalues and then pass it as putextra to vespro activity
+					//
+					
+					
+					Intent intent = new Intent(CurrentList.this, vespro.class);
+					startActivityForResult(intent, 1);
+					
+					
+					
+					
+					Boolean result = helper.updateVesselProfile(value);
+					Toast.makeText(getApplicationContext(), "deleted row with id " + updateInput.getText().toString(), Toast.LENGTH_SHORT).show();
+					Log.d("after removeVessel", result.toString());
+				}catch(Exception e){
+					Log.d("CurrentList Delete entry", "removeVessel failed");
+					e.printStackTrace();
+				}
+				}
+			});
+			 
+			 updateAlert.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+				
+				@Override
+				public void onClick(DialogInterface dialog, int which) {
+					// TODO Auto-generated method stub
+				return;	
+				}
+			});
+			 updateAlert.show();*/
+			
+			
+			
+			Toast.makeText(getApplicationContext(), "updation! work under progress!", Toast.LENGTH_SHORT).show();
 								break;
 		
 		
@@ -86,6 +172,12 @@ public class CurrentList extends Activity implements OnClickListener {
 		
 		}
 		
+	}
+	
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		// TODO Auto-generated method stub
+		super.onActivityResult(requestCode, resultCode, data);
 	}
 
 }

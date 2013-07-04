@@ -6,19 +6,121 @@
         android:layout_height="match_parent"
         >
 
-    <TextView
-        android:id="@+id/MarqueeText"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:ellipsize="marquee"
-        android:focusable="true"
-        android:focusableInTouchMode="true"
-        android:freezesText="true"
-        android:marqueeRepeatLimit="marquee_forever"
-        android:paddingLeft="15dip"
-        android:paddingRight="15dip"
-        android:scrollHorizontally="true"
-        android:singleLine="true"
-        android:text="This is a very long text which is not fitting in the screen so it needs to be marqueed." >
+   
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        
+         <TextView
+             android:id="@+id/MarqueeText"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:ellipsize="marquee"
+             android:focusable="true"
+             android:focusableInTouchMode="true"
+             android:freezesText="true"
+             android:marqueeRepeatLimit="marquee_forever"
+             android:paddingLeft="15dip"
+             android:paddingRight="15dip"
+             android:scrollHorizontally="true"
+             android:singleLine="true"
+             android:text="Welcome to Port Community System" >
+
     </TextView>
+
+         <TableLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content" >
+
+             <TableRow
+                 android:id="@+id/tableRow1"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" >
+
+                 <TextView
+                     android:id="@+id/textView1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="About IPA"
+                     android:textAppearance="?android:attr/textAppearanceLarge" />
+
+             </TableRow>
+
+             <TableRow
+                 android:id="@+id/tableRow2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" >
+
+                 <TextView
+                     android:id="@+id/textView3"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:gravity="center|fill"
+                     android:text="@string/ipa"
+                     android:textAppearance="?android:attr/textAppearanceSmall" />
+
+             </TableRow>
+
+             <TableRow
+                 android:id="@+id/tableRow3"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" >
+
+                 <TextView
+                     android:id="@+id/textView2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="About PCS"
+                     android:textAppearance="?android:attr/textAppearanceLarge" />
+
+             </TableRow>
+
+             <TableRow
+                 android:id="@+id/tableRow4"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" >
+
+                 <TextView
+                     android:id="@+id/textView4"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/pcs"
+                     android:textAppearance="?android:attr/textAppearanceSmall" />
+
+             </TableRow>
+
+             <TableRow
+                 android:id="@+id/tableRow5"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" >
+
+                 <TextView
+                     android:id="@+id/textView5"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="About Crimson"
+                     android:textAppearance="?android:attr/textAppearanceLarge" />
+
+             </TableRow>
+
+             <TableRow
+                 android:id="@+id/tableRow6"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content" >
+
+                 <TextView
+                     android:id="@+id/textView6"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:text="@string/crimson"
+                     android:textAppearance="?android:attr/textAppearanceSmall" />
+
+             </TableRow>
+
+         </TableLayout>
+    
+    </LinearLayout>
+
 </ScrollView>

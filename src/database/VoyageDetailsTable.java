@@ -2,7 +2,7 @@ package database;
 
 public class VoyageDetailsTable {
 	
-	public static final String TABLE_NAME = "";
+	public static final String TABLE_NAME = "TPCS_VOYAGE";
 	
 	public static final String COLUMN_ID = "_id";
 	public static final String COLUMN_IMO_NUMBER = "imo_number";

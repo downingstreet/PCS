@@ -11,9 +11,10 @@
           android:id="@+id/header"
           android:layout_width="fill_parent"
           android:layout_height="wrap_content"
-          android:src="@drawable/subheader"
+          android:orientation="vertical"
           android:paddingBottom="5dip"
-          android:paddingTop="20dip" >
+          android:paddingTop="20dip"
+          android:src="@drawable/subheader" >
 
           <!-- Logo Start -->
 
@@ -39,7 +40,9 @@
           android:layout_below="@+id/linearLayout1"
           android:layout_centerHorizontal="true"
           android:background="@layout/footer_repeat"
-          android:gravity="end" >
+          android:gravity="end"
+          android:orientation="vertical" >
+
       </LinearLayout>
 
       <ImageView
@@ -64,6 +67,7 @@
               android:textColor="#372c24" />
 
           <EditText
+              android:id="@+id/text_user"
               android:layout_width="fill_parent"
               android:layout_height="wrap_content"
               android:layout_marginBottom="20dip"
@@ -78,6 +82,7 @@
               android:textColor="#372c24" />
 
           <EditText
+              android:id="@+id/text_pwd"
               android:layout_width="fill_parent"
               android:layout_height="wrap_content"
               android:layout_marginTop="5dip"

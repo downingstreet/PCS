@@ -47,7 +47,7 @@
                     android:text="VCN:" />
 
                 <EditText
-                    android:id="@+id/editText2"
+                    android:id="@+id/text_vcn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -71,7 +71,7 @@
                     android:text="Flag:" />
 
                 <Spinner
-                    android:id="@+id/spinner_port_of_sub"
+                    android:id="@+id/spin_flag"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" 
                     android:layout_weight="1"/>

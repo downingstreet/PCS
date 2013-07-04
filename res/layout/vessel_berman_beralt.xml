@@ -23,8 +23,8 @@
             <TableRow
                 android:id="@+id/tableRow18"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" 
-                android:background="@android:color/holo_blue_light">
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_light" >
 
                 <TextView
                     android:id="@+id/textView14"
@@ -32,7 +32,6 @@
                     android:layout_height="wrap_content"
                     android:text="Berth Details"
                     android:textAppearance="?android:attr/textAppearanceSmall" />
-
             </TableRow>
 
             <TableRow
@@ -44,20 +43,18 @@
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="VCN:" 
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:text="VCN:" />
 
                 <EditText
-                    android:id="@+id/text_voyage_no"
+                    android:id="@+id/text_vcn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:ems="10" 
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:ems="10" >
 
                     <requestFocus android:layout_width="wrap_content" />
-
                 </EditText>
-
             </TableRow>
 
             <TableRow
@@ -69,16 +66,15 @@
                     android:id="@+id/textView3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Vessel Name:" 
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:text="Vessel Name:" />
 
                 <EditText
-                    android:id="@+id/editText2"
+                    android:id="@+id/text_vessel_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:ems="10" 
-                    android:layout_weight="1"/>
-
+                    android:layout_weight="1"
+                    android:ems="10" />
             </TableRow>
 
             <TableRow
@@ -90,17 +86,16 @@
                     android:id="@+id/textView4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Expected Arrival Date:" 
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:text="Expected Arrival Date:" />
 
                 <EditText
-                    android:id="@+id/text_imo_no"
+                    android:id="@+id/text_arrival_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="date" 
-                    android:layout_weight="1"/>
-
+                    android:inputType="date" />
             </TableRow>
 
             <TableRow
@@ -112,17 +107,16 @@
                     android:id="@+id/textView5"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Expected Departure Date:" 
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:text="Expected Departure Date:" />
 
                 <EditText
-                    android:id="@+id/editText4"
+                    android:id="@+id/text_dep_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="date" 
-                    android:layout_weight="1"/>
-
+                    android:inputType="date" />
             </TableRow>
 
             <TableRow
@@ -134,15 +128,14 @@
                     android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Anchorage/Berth:" 
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:text="Anchorage/Berth:" />
 
                 <Spinner
-                    android:id="@+id/spinner_port_of_sub"
+                    android:id="@+id/spin_anch_berth"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" 
-                    android:layout_weight="1"/>
-
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
             </TableRow>
 
             <TableRow
@@ -154,17 +147,16 @@
                     android:id="@+id/textView7"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Name of Master:"
-                    android:layout_weight="1" />
+                    android:layout_weight="1"
+                    android:text="Name of Master:" />
 
                 <EditText
-                    android:id="@+id/editText5"
+                    android:id="@+id/text_master"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="textPersonName" 
-                    android:layout_weight="1"/>
-
+                    android:inputType="textPersonName" />
             </TableRow>
 
             <TableRow
@@ -176,16 +168,15 @@
                     android:id="@+id/textView8"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Next Port of Call:" 
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:text="Next Port of Call:" />
 
                 <EditText
-                    android:id="@+id/editText6"
+                    android:id="@+id/text_next_port"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:ems="10" 
-                    android:layout_weight="1"/>
-
+                    android:layout_weight="1"
+                    android:ems="10" />
             </TableRow>
 
             <TableRow
@@ -197,16 +188,15 @@
                     android:id="@+id/textView9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Destination Port:" 
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:text="Destination Port:" />
 
                 <EditText
-                    android:id="@+id/editText7"
+                    android:id="@+id/text_destination"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:ems="10" 
-                    android:layout_weight="1"/>
-
+                    android:layout_weight="1"
+                    android:ems="10" />
             </TableRow>
 
             <TableRow
@@ -221,7 +211,6 @@
                     android:layout_height="wrap_content"
                     android:text="Vessel Details"
                     android:textAppearance="?android:attr/textAppearanceSmall" />
-
             </TableRow>
 
             <TableRow
@@ -233,16 +222,15 @@
                     android:id="@+id/textView10"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Present Displacement:" 
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:text="Present Displacement:" />
 
                 <EditText
-                    android:id="@+id/editText8"
+                    android:id="@+id/text_displacement"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:ems="10" 
-                    android:layout_weight="1"/>
-
+                    android:layout_weight="1"
+                    android:ems="10" />
             </TableRow>
 
             <TableRow
@@ -254,17 +242,16 @@
                     android:id="@+id/textView11"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Draft Fwd:" 
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:text="Draft Fwd:" />
 
                 <EditText
-                    android:id="@+id/text_shipping_agent_code"
+                    android:id="@+id/text_fwd"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:ems="10" 
-                    android:hint="(in mtrs)"
-                    android:layout_weight="1"/>
-
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="(in mtrs)" />
             </TableRow>
 
             <TableRow
@@ -276,50 +263,55 @@
                     android:id="@+id/textView12"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Draft Aft:" 
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:text="Draft Aft:" />
 
                 <EditText
-                    android:id="@+id/editText10"
+                    android:id="@+id/text_aft"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:ems="10" 
-                    android:hint="(in mtrs)"
-                    android:layout_weight="1"/>
-
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="(in mtrs)" />
             </TableRow>
 
             <TableRow
                 android:id="@+id/tableRow12"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                 >
-				<LinearLayout 
-				    android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                
-                android:orientation="horizontal">
+                android:layout_height="wrap_content" >
+
                 <TextView
                     android:id="@+id/textView13"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Hazardous Good on Cargo:"
-                    android:layout_weight="2" />
+                    android:layout_weight="1"
+                    android:text="Hazardous Good on Cargo:" />
 
-                <RadioButton
-                    android:id="@+id/radioButton1"
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Yes" 
-                    android:layout_weight="1"/>
+                    android:layout_height="wrap_content" 
+                    android:layout_weight="1">
 
-                <RadioButton
-                    android:id="@+id/radioButton2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="No"
-                    android:layout_weight="1" />
-</LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <RadioButton
+                            android:id="@+id/radio_yes1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="YES" />
+
+                        <RadioButton
+                            android:id="@+id/radio_no1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NO" />
+
+                    </LinearLayout>
+                </RadioGroup>
             </TableRow>
 
             <TableRow
@@ -327,40 +319,46 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" >
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal" >
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sludge Disposal:" />
 
-                    <TextView
-                        android:id="@+id/TextView01"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="2"
-                        android:text="Sludge Disposal:" />
+                <RadioGroup
+                    android:id="@+id/radioGroup2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" >
 
-                    <RadioButton
-                        android:id="@+id/RadioButton02"
+                    <LinearLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="Yes" />
+                        android:layout_height="match_parent" >
 
-                    <RadioButton
-                        android:id="@+id/RadioButton01"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="No" />
-                </LinearLayout>
+                        <RadioButton
+                            android:id="@+id/radio_yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="YES" />
+
+                        <RadioButton
+                            android:id="@+id/radio_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NO" />
+
+                    </LinearLayout>
+                </RadioGroup>
 
             </TableRow>
 
             <TableRow
                 android:id="@+id/tableRow20"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" 
-                android:background="@android:color/holo_blue_light">
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_light" >
 
                 <TextView
                     android:id="@+id/textView19"
@@ -368,7 +366,6 @@
                     android:layout_height="wrap_content"
                     android:text="Consignee Details"
                     android:textAppearance="?android:attr/textAppearanceSmall" />
-
             </TableRow>
 
             <TableRow
@@ -380,24 +377,23 @@
                     android:id="@+id/textView15"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Consignee Details:" 
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:text="Consignee Details:" />
 
                 <EditText
-                    android:id="@+id/editText11"
+                    android:id="@+id/text_consignee"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="textMultiLine" 
-                    android:layout_weight="1"/>
-
+                    android:inputType="textMultiLine" />
             </TableRow>
 
             <TableRow
                 android:id="@+id/tableRow21"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" 
-                android:background="@android:color/holo_blue_light">
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_light" >
 
                 <TextView
                     android:id="@+id/textView20"
@@ -405,7 +401,6 @@
                     android:layout_height="wrap_content"
                     android:text="Accidental Details"
                     android:textAppearance="?android:attr/textAppearanceSmall" />
-
             </TableRow>
 
             <TableRow
@@ -417,17 +412,16 @@
                     android:id="@+id/textView16"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Accidental Details:" 
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:text="Accidental Details:" />
 
                 <EditText
-                    android:id="@+id/editText12"
+                    android:id="@+id/text_accident_detail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="textMultiLine" 
-                    android:layout_weight="1"/>
-
+                    android:inputType="textMultiLine" />
             </TableRow>
 
             <TableRow
@@ -439,17 +433,16 @@
                     android:id="@+id/textView17"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Remarks(if any):" 
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:text="Remarks(if any):" />
 
                 <EditText
-                    android:id="@+id/editText13"
+                    android:id="@+id/text_remark"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="textMultiLine" 
-                    android:layout_weight="1"/>
-
+                    android:inputType="textMultiLine" />
             </TableRow>
 
             <TableRow
@@ -467,29 +460,25 @@
                         android:id="@+id/button1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Submit" 
-                        android:layout_weight="1"/>
+                        android:layout_weight="1"
+                        android:text="Submit" />
 
                     <Button
                         android:id="@+id/button2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Save as Draft" 
-                        android:layout_weight="1"/>
+                        android:layout_weight="1"
+                        android:text="Save as Draft" />
 
                     <Button
                         android:id="@+id/button3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Cancel" 
-                        android:layout_weight="1"/>
-
+                        android:layout_weight="1"
+                        android:text="Cancel" />
                 </LinearLayout>
-
             </TableRow>
-
         </TableLayout>
-
     </LinearLayout>
 
 </ScrollView>

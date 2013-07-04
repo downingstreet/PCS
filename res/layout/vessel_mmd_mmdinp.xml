@@ -47,7 +47,7 @@
                     android:text="IMO Number:" />
 
                 <EditText
-                    android:id="@+id/text_voyage_no"
+                    android:id="@+id/text_imo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -67,7 +67,7 @@
                     android:text="Vessel Name:" />
 
                 <EditText
-                    android:id="@+id/editText2"
+                    android:id="@+id/text_vessel_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

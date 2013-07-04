@@ -1,30 +1,1247 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="app_name">PCS</string>
+    
     <string name="action_settings">Settings</string>
+    
     <string name="hello_world">Hello world!</string>
+    
     <string name="cal">Calender</string>
+    
     <string name="contact">Contact Us</string>
+    
     <string name="home">Welcome to Crimson</string>
+    
     <string name="weather">Weather</string>
+    
     <string name="login">Log-In</string>
+    
     <string name="hello">Hello World, LoginActivity!</string>
+    
     <string name="rem">Remember Password</string>
+    
     <string name="user">User Name</string>
+    
     <string name="pwd">Password</string>
+    
     <string name="forget">Forget Password?</string>
+    
     <string name="design">Designed By:</string>
     
-    <string-array name="type_of_vessel_array">
+    <string-array name="De_Stuffing">
         <item>Container</item>
         <item>Passenger</item>
         <item>Other</item>
     </string-array>
+     
      <string-array name="submission_port_array">
-        <item>Mumbai</item>
-        <item>Chennai</item>
-        <item>Other</item>
-    </string-array>
+<item >INHAL1</item>
+<item >INMRM1</item>
+<item >INENR1</item>
+<item >INVPT1</item>
+<item >INNML1</item>
+<item >INIXY1</item>
+<item >INTUT1</item>
+<item >INCOK1</item>
+<item >INCCU1</item>
+<item >INMUN1</item>
+<item >INPRT1</item>
+<item >INMAA1</item>
+<item >INJNP1</item>
+<item >INBOM1</item>
+<item >SGSIN1</item>
+<item >IN1</item>
+<item >INCCU0</item>
+<item >INVTZ1</item>
+</string-array >
+     
+     <string name="ipa">IPA is an organisation that was conceived and constituted by the Major Ports of India under the Societies Registration act in 1966 with the prime objective of developing and increasing efficiency and productivity in ports and its working environment. The functioning body of IPA comprises of the Chairman of all Major Ports, which are the local authorities formed by a statute and function under the regulatory control of Ministry of Shipping, Road Transport &amp; Highways, Govt of India. The Chairman of Association is elected in the Annual General Meeting while the Secretariat of IPA is headed by the Managing Director who operates from New Delhi.</string>
+     
+     <string name="pcs">Port Community System (PCS) is intended to integrate the electronic flow of trade related document/information and function as the centralized hub for the ports of India and other stakeholders like Shipping Lines/Agents, Surveyors, Stevedores, Banks, Container Freight Stations, Customs House agents, Importers, Exporters, Railways/CONCOR, Government regulatory agencies, etc. for exchanging electronic messages in secure manner.</string>
+     
+     <string name="crimson">CrimsonLogic is a trusted partner to governments, providing end-to-end eGovernment solutions in trade facilitation, judiciary, tax, healthcare, citizen-centric and IT security domains. We help governments design and run innovative and sustainable services to collaborate more seamlessly with their citizens and ecosystem.</string>
+     
+     <string-array name="nations_array">
+<item>AFGHANISTAN </item>
+<item>ALBANIA </item>
+<item>ALGERIA </item>
+<item>AMERICAN SAMOA </item>
+<item >ANDORRA </item>
+<item >ANGOLA </item>
+<item >ANGUILLA </item>
+<item >ANTARCTICA </item>
+<item >ANTIGUA AND BARBUDA </item>
+<item >ARGENTINA </item>
+<item >ARMENIA </item>
+<item >ARUBA </item>
+<item >AUSTRALIA </item>
+<item >AUSTRIA </item>
+<item >AZERBAIJAN </item>
+<item >BAHAMAS </item>
+<item >BAHRAIN </item>
+<item >BANGLADESH </item>
+<item >BARBADOS </item>
+<item >BELARUS </item>
+<item >BELGIUM </item>
+<item >BELIZE </item>
+<item >BENIN </item>
+<item >BERMUDA </item>
+<item >BHUTAN </item>
+<item >BOLIVIA </item>
+<item >BOSNIA AND HERZEGOVINA </item>
+<item >BOTSWANA </item>
+<item >BOUVET ISLAND </item>
+<item >BRAZIL </item>
+<item >BRITISH INDIAN OCEAN TERRITORY </item>
+<item >BRUNEI DARUSSALAM </item>
+<item >BULGARIA </item>
+<item >BURKINA FASO </item>
+<item >BURUNDI </item>
+<item >CAMBODIA </item>
+<item >CAMEROON </item>
+<item >CANADA </item>
+<item >CAPE VERDE </item>
+<item >CAYMAN ISLANDS </item>
+<item >CENTRAL AFRICAN REPUBLIC </item>
+<item >CHAD </item>
+<item >CHILE </item>
+<item >CHINA </item>
+<item >CHRISTMAS ISLAND </item>
+<item >COCOS KEELING ISLANDS</item>
+<item >COLOMBIA </item>
+<item >COMOROS </item>
+<item >CONGO </item>
+<item >CONGO THE DEMOCRATIC REPUBLIC OF THE</item>
+<item >COOK ISLANDS </item>
+<item >COSTA RICA </item>
+<item >CROATIA </item>
+<item >CUBA </item>
+<item >CYPRUS </item>
+<item >CZECH REPUBLIC </item>
+<item >C?TE DIVOIRE </item>
+<item >DENMARK </item>
+<item >DJIBOUTI </item>
+<item >DOMINICA </item>
+<item >DOMINICAN REPUBLIC </item>
+<item >ECUADOR </item>
+<item >EGYPT </item>
+<item >EL SALVADOR </item>
+<item >EQUATORIAL GUINEA </item>
+<item >ERITREA </item>
+<item >ESTONIA </item>
+<item >ETHIOPIA </item>
+<item >FALKLAND ISLANDS </item>
+<item >FAROE ISLANDS </item>
+<item >FIJI </item>
+<item >FINLAND </item>
+<item >FRANCE </item>
+<item >FRENCH GUIANA </item>
+<item >FRENCH POLYNESIA </item>
+<item >FRENCH SOUTHERN TERRITORIES </item>
+<item >GABON </item>
+<item >GAMBIA </item>
+<item >GEORGIA </item>
+<item >GERMANY </item>
+<item >GHANA </item>
+<item >GIBRALTAR </item>
+<item >GREECE </item>
+<item >GREENLAND </item>
+<item >GRENADA </item>
+<item >GUADELOUPE </item>
+<item >GUAM </item>
+<item >GUATEMALA </item>
+<item >GUINEA </item>
+<item >GUINEA BISSAU</item>
+<item >GUYANA </item>
+<item >HAITI </item>
+<item >HEARD ISLAND AND MCDONALD ISLANDS </item>
+<item >HOLY SEE VATICAN CITY STATE</item>
+<item >HONDURAS </item>
+<item >HONG KONG </item>
+<item >HUNGARY </item>
+<item >ICELAND </item>
+<item >INDIA </item>
+<item >INDONESIA </item>
+<item >IRAN ISLAMIC REPUBLIC OF</item>
+<item >IRAQ </item>
+<item >IRELAND </item>
+<item >ISLE OF MAN</item>
+<item >ISRAEL </item>
+<item >ITALY </item>
+<item >JAMAICA </item>
+<item >JAPAN </item>
+<item >JORDAN </item>
+<item >KAZAKHSTAN </item>
+<item >KENYA </item>
+<item >KIRIBATI </item>
+<item >KOREA DEMOCRATIC PEOPLES REPUBLIC OF</item>
+<item >KOREA REPUBLIC OF</item>
+<item >KUWAIT </item>
+<item >KYRGYZSTAN </item>
+<item >LAO PEOPLES DEMOCRATIC REPUBLIC </item>
+<item >LATVIA </item>
+<item >LEBANON </item>
+<item >LESOTHO </item>
+<item >LIBERIA </item>
+<item >LIBYAN ARAB JAMAHIRIYA </item>
+<item >LIECHTENSTEIN </item>
+<item >LITHUANIA </item>
+<item >LUXEMBOURG </item>
+<item >MACAO </item>
+<item >MACEDONIA THE FORMER YUGOSLAV REPUBLIC OF</item>
+<item >MADAGASCAR </item>
+<item >MALAWI </item>
+<item >MALAYSIA </item>
+<item >MALDIVES </item>
+<item >MALI </item>
+<item >MALTA </item>
+<item >MARSHALL ISLANDS </item>
+<item >MARTINIQUE </item>
+<item >MAURITANIA </item>
+<item >MAURITIUS </item>
+<item >MAYOTTE </item>
+<item >MEXICO </item>
+<item >MICRONESIA, FEDERATED STATES OF </item>
+<item >MOLDOVA, REPUBLIC OF </item>
+<item >MONACO </item>
+<item >MONGOLIA </item>
+<item >MONTENEGRO</item>
+<item >MONTSERRAT </item>
+<item >MOROCCO </item>
+<item >MOZAMBIQUE </item>
+<item >MYANMAR </item>
+<item >NAMIBIA </item>
+<item >NAURU </item>
+<item >NEPAL </item>
+<item >NETHERLANDS </item>
+<item >NETHERLANDS ANTILLES </item>
+<item >NEW CALEDONIA </item>
+<item >NEW ZEALAND </item>
+<item >NICARAGUA </item>
+<item >NIGER </item>
+<item >NIGERIA </item>
+<item >NIUE </item>
+<item >NORFOLK ISLAND </item>
+<item >NORTHERN MARIANA ISLANDS </item>
+<item >NORWAY </item>
+<item >OMAN </item>
+<item >PAKISTAN </item>
+<item >PALAU </item>
+<item >PALESTINIAN TERRITORY, OCCUPIED </item>
+<item >PANAMA </item>
+<item >PAPUA NEW GUINEA </item>
+<item >PARAGUAY </item>
+<item >PERU </item>
+<item >PHILIPPINES </item>
+<item >PITCAIRN </item>
+<item >POLAND </item>
+<item >PORTUGAL </item>
+<item >PUERTO RICO </item>
+<item >QATAR </item>
+<item >ROMANIA </item>
+<item >RUSSIAN FEDERATION </item>
+<item >RWANDA </item>
+<item >R?UNION </item>
+<item >SAINT HELENA </item>
+<item >SAINT KITTS AND NEVIS </item>
+<item >SAINT LUCIA </item>
+<item >SAINT PIERRE AND MIQUELON </item>
+<item >SAINT VINCENT AND THE GRENADINES </item>
+<item >SAMOA </item>
+<item >SAN MARINO </item>
+<item >SAO TOME AND PRINCIPE </item>
+<item >SAUDI ARABIA </item>
+<item >SENEGAL </item>
+<item >SERBIA AND MONTENEGRO </item>
+<item >SEYCHELLES </item>
+<item >SIERRA LEONE </item>
+<item >SINGAPORE </item>
+<item >SLOVAKIA </item>
+<item >SLOVENIA </item>
+<item >SOLOMON ISLANDS </item>
+<item >SOMALIA </item>
+<item >SOUTH AFRICA </item>
+<item >SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS </item>
+<item >SPAIN </item>
+<item >SRI LANKA </item>
+<item >SUDAN </item>
+<item >SURINAME </item>
+<item >SVALBARD AND JAN MAYEN </item>
+<item >SWAZILAND </item>
+<item >SWEDEN </item>
+<item >SWITZERLAND </item>
+<item >SYRIAN ARAB REPUBLIC </item>
+<item >TAIWAN, PROVINCE OF CHINA </item>
+<item >TAJIKISTAN </item>
+<item >TANZANIA, UNITED REPUBLIC OF </item>
+<item >THAILAND </item>
+<item >TIMOR-LESTE </item>
+<item >TOGO </item>
+<item >TOKELAU </item>
+<item >TONGA </item>
+<item >TRINIDAD AND TOBAGO </item>
+<item >TUNISIA </item>
+<item >TURKEY </item>
+<item >TURKMENISTAN </item>
+<item >TURKS AND CAICOS ISLANDS </item>
+<item >TUVALU </item>
+<item >UGANDA </item>
+<item >UKRAINE </item>
+<item >UNITED ARAB EMIRATES </item>
+<item >UNITED KINGDOM </item>
+<item >UNITED STATES </item>
+<item >UNITED STATES MINOR OUTLYING ISLANDS </item>
+<item >URUGUAY </item>
+<item >UZBEKISTAN </item>
+<item >VANUATU </item>
+<item >VENEZUELA </item>
+<item >VIETNAM </item>
+<item >VIRGIN ISLANDS</item>
+<item >VIRGIN ISLANDS U.S.</item>
+<item >WALLIS AND FUTUNA </item>
+<item >WESTERN SAHARA </item>
+<item >YEMEN </item>
+<item >ZAMBIA </item>
+<item >ZIMBABWE </item>
+<item >LAND ISLANDS </item>
+ <item >Others</item>
+     </string-array>
+     
+     <string-array name="Stuffing_array">
+         <item >Stuffing</item>
+         <item>De-Stuffing</item>
+     </string-array>
+     <string-array name="cargo_type_array">
+     <item>Breakbulk</item>
+<item>Containerized</item>
+<item>Diplomatic</item>
+<item>Documents</item>
+<item>Environmental pollutant cargo</item>
+<item>Frozen cargo</item>
+<item>General cargo</item>
+<item>Hazardous cargo</item>
+<item>High value consignments</item>
+<item>Household goods </item>
+<item>Liquid cargo</item>
+<item>Low value dutiable</item>
+<item>Low value non-dutiables</item>
+<item>Military</item>
+<item>Not Applicable</item>
+<item>Not-hazardous cargo</item>
+<item>Obnoxious</item>
+<item>Other non-containerized</item>
+<item>Out of gauge</item>
+<item>Palletized</item>
+<item>Roll-on roll-off</item>
+<item>Temperature controlled cargo</item>
+<item>Vehicles</item>
+     </string-array>
+     <string-array name="iso_code_array">
+         <item >20 FT (HC Reefer)</item>
+<item >20 FT (O/TOP, H/C)</item>
+<item >20 Ft</item>
+<item >20 Ft High Cube</item>
+<item >20 Ft Standard Dry</item>
+<item >20 PLATFORM</item>
+<item >20 X 86TANK</item>
+<item >20 X 96(REEFER)</item>
+<item >20 X8 REEFER</item>
+<item >20 X86&quot; OPEN TOP CONTAINER</item>
+<item >20 X9 GENERAL PURPOSE</item>
+<item >20 air</item>
+<item >20 air</item>
+<item >20 air</item>
+<item >20 break bulk</item>
+<item >20 bulk</item>
+<item >20 bulk</item>
+<item >20 bulk</item>
+<item >20 bulk</item>
+<item >20 dry</item>
+<item >20 dry</item>
+<item >20 dry</item>
+<item >20 f/rack</item>
+<item >20 f/rack</item>
+<item >20 f/rack</item>
+<item >20 f/rack</item>
+<item >20 f/rack</item>
+<item >20 f/rack</item>
+<item >20 f/rack</item>
+<item >20 f/rack</item>
+<item >20 f/rack</item>
+<item >20 f/rack</item>
+<item >20 fantainer</item>
+<item >20 ft Flat/ Rack</item>
+<item >20 ft H/C Reefer</item>
+<item >20 ft Reefer</item>
+<item >20 ft STD</item>
+<item >20 ft STD</item>
+<item >20 ft Tank</item>
+<item >20 half height</item>
+<item >20 insulated</item>
+<item >20 insulated</item>
+<item >20 insulated</item>
+<item >20 insulated</item>
+<item >20 mafi</item>
+<item >20 o/side</item>
+<item >20 o/top</item>
+<item >20 o/top</item>
+<item >20 o/top</item>
+<item >20 o/top</item>
+<item >20 open side</item>
+<item >20 open top high cube</item>
+<item >20 openside</item>
+<item >20 ph 80</item>
+<item >20 porthole</item>
+<item >20 porthole</item>
+<item >20 porthole reefer</item>
+<item >20 reef</item>
+<item >20 reefer</item>
+<item >20 reefer</item>
+<item >20 reefer</item>
+<item >20 reefer</item>
+<item >20 reefer</item>
+<item >20 reefer</item>
+<item >20 reefer</item>
+<item >20 ref 80</item>
+<item >20 removable side</item>
+<item >20 std</item>
+<item >20 tank</item>
+<item >20 tank</item>
+<item >20 tank</item>
+<item >20 tank 80</item>
+<item >20 tnk</item>
+<item >20 tnk</item>
+<item >20 trailer</item>
+<item >20 vent</item>
+<item >20 vent</item>
+<item >20 vent</item>
+<item >20 vent</item>
+<item >20 vent</item>
+<item >20&quot; BY 8&quot; OPEN TOP</item>
+<item >20&quot; BY 8&quot; OPEN TOP</item>
+<item >20&quot; BY 8&quot; OPEN TOP</item>
+<item >20&quot; BY 8&quot;6&quot; OPEN TOP</item>
+<item >20&quot; BY 86&quot; OPEN TOP Open Sides</item>
+<item >20&quot; BY 86&quot; OT Open Sides/rmv</item>
+<item >20&quot; BY 86&quot; OT remove end frms</item>
+<item >20&quot; Dry</item>
+<item >20&quot; Dry Insulated</item>
+<item >20&quot; FLAT RACK-86&quot; HIGH ENDS</item>
+<item >20&quot; Flat Platform</item>
+<item >20&quot; Flat Rack</item>
+<item >20&quot; HANGERTAINERS</item>
+<item >20&quot; Standard Rack</item>
+<item >20&quot; Standard Rack</item>
+<item >20&quot; Standard Type</item>
+<item >20&quot; TANK CONTAINER</item>
+<item >2061</item>
+<item >20X8 0&quot; GENERAL PURPOSE</item>
+<item >20X86&quot; GENERAL PURPOSE</item>
+<item >20X9 GENERAL PURPOSE</item>
+<item >20x8 Flat</item>
+<item >20x8 Flat</item>
+<item >20x80 Tank</item>
+<item >20x86 Flat</item>
+<item >20x86 Flat, collapsible ends</item>
+<item >20x86 Flat, fixed ends</item>
+<item >20x86 Ft Standard Dry</item>
+<item >20x86 Ft Vented</item>
+<item >20x86 Ft Vented</item>
+<item >20x86 Tank</item>
+<item >29 fr 86</item>
+<item >40 BULK</item>
+<item >40 Ft Dry-8&quot; 6&quot;</item>
+<item >40 Ft Open Top</item>
+<item >40 Ft Open Top</item>
+<item >40 Ft Vent</item>
+<item >40 INSULATED</item>
+<item >40 O/TOP</item>
+<item >40 O/TOP</item>
+<item >40 REEFER</item>
+<item >40 REEFER</item>
+<item >40 REEFER</item>
+<item >40 STD</item>
+<item >40 VNT</item>
+<item >40 X 8 (REEFER)</item>
+<item >40 X 80WITH VENTILITION</item>
+<item >40 blk</item>
+<item >40 bulk</item>
+<item >40 bulk</item>
+<item >40 bulk</item>
+<item >40 bulk</item>
+<item >40 f/rack</item>
+<item >40 f/rack</item>
+<item >40 f/rack</item>
+<item >40 f/rack</item>
+<item >40 f/rack</item>
+<item >40 f/rack</item>
+<item >40 f/rack</item>
+<item >40 f/rack</item>
+<item >40 flt</item>
+<item >40 foot Dry 8foot 6ins</item>
+<item >40 ft H/C Reefer</item>
+<item >40 ft STD</item>
+<item >40 ft STD Reefer</item>
+<item >40 insulated</item>
+<item >40 insulated</item>
+<item >40 insulated</item>
+<item >40 insulated</item>
+<item >40 mafi</item>
+<item >40 o/top</item>
+<item >40 o/top</item>
+<item >40 o/top</item>
+<item >40 o/top</item>
+<item >40 porthole reefer</item>
+<item >40 reefer</item>
+<item >40 reefer</item>
+<item >40 reefer</item>
+<item >40 reefer</item>
+<item >40 reefer</item>
+<item >40 reefer</item>
+<item >40 reefer</item>
+<item >40 reefer</item>
+<item >40 reefer</item>
+<item >40 reefer</item>
+<item >40 std</item>
+<item >40 std</item>
+<item >40 tank</item>
+<item >40 tank</item>
+<item >40 tank</item>
+<item >40 tank</item>
+<item >40 tank</item>
+<item >40 tank</item>
+<item >40 trailer</item>
+<item >40 vent</item>
+<item >40 vent</item>
+<item >40 vnt</item>
+<item >40 vnt</item>
+<item >40&quot; BY 4&quot; Platform</item>
+<item >40&quot; BY 4&quot; Platform</item>
+<item >40&quot; BY 4&quot; Platform</item>
+<item >40&quot; BY 8&quot; DRY</item>
+<item >40&quot; BY 8&quot; OPEN TOP</item>
+<item >40&quot; BY 8&quot; Reefer</item>
+<item >40&quot; BY 8&quot; Tank</item>
+<item >40&quot; BY 9&quot;6 Dry</item>
+<item >40&quot; BY 9&quot;6 Dry</item>
+<item >40&quot; FLATRACK</item>
+<item >40&quot; HANGERAINERS</item>
+<item >40&quot; Reefer</item>
+<item >40&quot; platforem</item>
+<item >40&quot;HIGH CUBE VENTILATED</item>
+<item >40OPEN TOP</item>
+<item >40X 8 6&quot; (REEFER)</item>
+<item >40X 9 6&quot;REFRIGERATOR HC</item>
+<item >40X8 6&quot; GENERAL PURPOSE</item>
+<item >40X8 GENERAL PURPOSE</item>
+<item >40X9 GENERAL PURPOSE</item>
+<item >40x4 Open Top</item>
+<item >40x8 Insulated</item>
+<item >40x86 Dry</item>
+<item >40x86 Dry</item>
+<item >40x86 Dry</item>
+<item >40x86 Flat</item>
+<item >40x86 Flat</item>
+<item >40x86 Flat collapsible ends</item>
+<item >40x86 Flat fixed ends</item>
+<item >40x86 Flt-collapsible ends</item>
+<item >40x86 Insulated Vented</item>
+<item >40x86 OT / removable ends</item>
+<item >40x86 Open Top</item>
+<item >40x86 Refrigerated</item>
+<item >40x86 Tank</item>
+<item >40x86 Vent</item>
+<item >40x9 Dry</item>
+<item >40x9 Insulated</item>
+<item >40x9 Insulated</item>
+<item >40x9 Refrigerated</item>
+<item >40x9 Refrigerated</item>
+<item >40x9 Refrigerated</item>
+<item >40x96 Dry</item>
+<item >45 h/cube</item>
+<item >45 insulated high</item>
+<item >45 reefer</item>
+<item >45 std</item>
+<item >45 std</item>
+<item >45 vent</item>
+<item >45 vent high cube container</item>
+<item >45&quot; INSULATED</item>
+<item >45X 86DRY</item>
+<item >45X 96&quot; REFRIGERATED</item>
+<item >45X 96&quot;DRY</item>
+<item >45x96 Dry</item>
+<item >45x96 Dry</item>
+<item >APL Type</item>
+<item >APL Type</item>
+<item >DRY REFFER</item>
+<item >DRY VENTILATED.</item>
+<item >Dry Bulk</item>
+<item >Dry container</item>
+<item >F/Rack</item>
+<item >FORTY FIVE FEETER</item>
+<item >Forty foot reefer</item>
+<item >GENERAL PURPOSE</item>
+<item >Insulated/vented</item>
+<item >Insulated/vented</item>
+<item >MOOF</item>
+<item >Open Top</item>
+<item >Open top</item>
+<item >Open top  side</item>
+<item >Reefer 8&quot;0</item>
+<item >Reefer 8&quot;0</item>
+<item >Reefer 8&quot;6</item>
+<item >Reefer 8&quot;6&quot;</item>
+<item >Tank</item>
+<item >Tank</item>
+<item >Tank</item>
+<item >Ventilated Dry container</item>
+<item >break bulk pseudo-container</item>
+         
+     </string-array>
+     <string-array name="port_code_array">
+         <item> SGSIN1 </item>>
+     </string-array>
+     <string-array name="terminal_opr_code_array">
+         <item >CCTPL</item>
+<item >Chennai</item>
+<item >Chennai Port Trust</item>
+<item >Cochin</item>
+<item >Cochin Port Trust</item>
+<item >Ennore</item>
+<item >Gateway Terminal</item>
+<item >Gateway Terminal India Ltd</item>
+<item >Haldia</item>
+<item >ISPHL-Haldia</item>
+<item >JNPT Oil Terminal (BPCL)</item>
+<item >JNPT as Terminal Operator</item>
+<item >Jawaharlal Nehru</item>
+<item >Kandla</item>
+<item >Kolkata</item>
+<item >Mormugao</item>
+<item >Mumbai</item>
+<item >NSICT</item>
+<item >New Mangalore</item>
+<item >PSASICAL </item>
+<item >Paradip</item>
+<item >Singapore</item>
+<item >TMILL-Haldia</item>
+<item >Tuticorin</item>
+<item >Tuticorin Port Trust</item>
+<item >Visakha Container Terminal Pvt Ltd</item>
+<item >Visakhapatnam</item>
+<item >Vizag Port Trust</item>
+         
+     </string-array>
+     <string-array name="equipment_status_array">
+         <item>Continental</item>
+<item>Delivery</item>
+<item>Domestic</item>
+<item>Export/Embarkation (Passenger/Crew)</item>
+<item>Import/Disembarkation (Passenger/Crew)</item>
+<item>Over landed</item>
+<item>Positioning</item>
+<item>Redelivery</item>
+<item>Reloader</item>
+<item>Remain on board</item>
+<item>Repair</item>
+<item>Shifter</item>
+<item>Shorthanded</item>
+<item>Transshipment</item>
+         </string-array>
+     <string-array name="transport_mode_array">
+         <item >Air transport</item>
+<item >Fixed transport installation</item>
+<item >Inland water transport</item>
+<item >Mail</item>
+<item >Maritime transport</item>
+<item >Multimodal transport</item>
+<item >Rail transport</item>
+<item >Road transport</item>
+<item >Transport mode not applicable</item>
+<item >Transport mode not specified</item>
+         
+     </string-array>
+     <string-array name="visit_purpose_array">
+         <item >Awaiting orders</item>
+<item >Cargo Tank Cleaning</item>
+<item >Cargo operation Discharge</item>
+<item >Cargo operation Load</item>
+<item >Cargo operations - Discharge and Load</item>
+<item >Changing crew</item>
+<item >Crew movement</item>
+<item >Cruise, leisure and recreation</item>
+<item >Customs Clearance</item>
+<item >Degassing</item>
+<item >Disposal of waste</item>
+<item >Goodwill visit</item>
+<item >Laid-up</item>
+<item >Miscellaneous (Reason for Re-Enter-if Any)</item>
+<item >Passenger movement</item>
+<item >Quarantine inspection</item>
+<item >Refuge</item>
+<item >Repair</item>
+<item >Repair in Dry Dock</item>
+<item >Repair in Wet Dock</item>
+<item >Taking bunkers</item>
+<item >Taking supplies</item>
+<item >Temporary stop/ waiting for order</item>
+<item >Under government order</item>
+         
+     </string-array>
+     
+     <string-array name="status_array">
+         <item >Foreign</item>
+		 <item >Coastal</item>
+         
+     </string-array>
+     <string-array name="voyage_type_array">
+         <item >Charter</item>
+		<item >Liner</item>
+         
+     </string-array>
+     <string-array name="anchorage_berth_array">
+         <item >Anchorage</item>
+         <item >Berth</item>
+         <item >Both</item>
+     </string-array>
+     <string-array name="container_cargo_array">
+         <item >Container</item>
+         <item>Cargo</item>
+     </string-array>
+     <string-array name="hazard_type_array">
+         <item >CARGO</item>
+		<item >GAS CYLINDER</item>
+		<item >RADIO ACTIVE MATERIAL</item>      
+     </string-array>
+     <string-array name="package_type_array">
+         <item >Aerosol</item>
+<item >Ampoule,non-protected</item>
+<item >Ampoule,protected</item>
+<item >Atomizer</item>
+<item >Bag</item>
+<item >Bale,compressed</item>
+<item >Bale,non-compressed</item>
+<item >Balloon,non-protected</item>
+<item >Balloon,protected</item>
+<item >Bar</item>
+<item >Bars,inbundle/bunch/truss</item>
+<item >Basket</item>
+<item >Beercrate</item>
+<item >Bin</item>
+<item >Blot</item>
+<item >Board</item>
+<item >Board,inbundle/bunch/truss</item>
+<item >Bobbin</item>
+<item >Bottle,non-protected,bulbous</item>
+<item >Bottle,non-protected,cylindrical</item>
+<item >Bottle,protectedbulbous</item>
+<item >Bottle,protectedcylindrical</item>
+<item >Bottlecrate,bottlerack</item>
+<item >Box</item>
+<item >Bre arl</item>
+<item >Btut</item>
+<item >Bucket</item>
+<item >Bulk, gas (at 1031 mbar and 15 degree Celsius)</item>
+<item >Bulk,liquefiedgas(atabnormaltemperature/pressure)</item>
+<item >Bulk,liquid</item>
+<item >Bulk,solid,fineparticles(powders)</item>
+<item >Bulk,solid,granularparticles(grains)</item>
+<item >Bulk,solid,largeparticles(nodules)</item>
+<item >Bunch</item>
+<item >Bundle</item>
+<item >Cage</item>
+<item >Can,cylindrical</item>
+<item >Can,rectangular</item>
+<item >Canister</item>
+<item >Canvas</item>
+<item >Carboy,non-protected</item>
+<item >Carboy,protected</item>
+<item >Carton</item>
+<item >Case</item>
+<item >Cask</item>
+<item >Chest</item>
+<item >Churn</item>
+<item >Ciol</item>
+<item >Coffer</item>
+<item >Coffin</item>
+<item >Collapsibletube</item>
+<item >Cover</item>
+<item >Crate</item>
+<item >Creel</item>
+<item >Cup</item>
+<item >Cylinder</item>
+<item >Demijohn,non-protected</item>
+<item >Demijohn,protected</item>
+<item >Drum</item>
+<item >Envelope</item>
+<item >F askl</item>
+<item >F uitcrater</item>
+<item >Filmpack</item>
+<item >Footlocker</item>
+<item >Frame</item>
+<item >Framedcrate</item>
+<item> Friikn</item>
+<item >Gasbottle</item>
+<item >Girder</item>
+<item >Girders,inbundle/bunch/truss</item>
+<item >Hamper</item>
+<item >Hogshead</item>
+<item >I gotn</item>
+<item> Ingots,inbundle/bunch/truss</item>
+<item >J rrican,cylindric le</item>
+<item >Jerrican,rectangular</item>
+<item >Jra</item>
+<item >Jug</item>
+<item >Jutebag</item>
+<item >Keg</item>
+<item >Log</item>
+<item >Logs,inbundle/bunch/truss</item>
+<item >Mat</item>
+<item >Match box</item>
+<item >Milkcrate</item>
+<item >Multiplybag</item>
+<item >Multiwallsack</item>
+<item >Nest</item>
+<item >Net</item>
+<item >Package</item>
+<item >Packet</item>
+<item >Paelt</item>
+<item >Pial</item>
+<item >Pipe</item>
+<item >Pipes,inbundle/bunch/truss</item>
+<item >Plank</item>
+<item >Planks,inbundle/bunch/truss</item>
+<item >Plates,inbundle/bunch/truss</item>
+<item >Pouch</item>
+<item >Preacl</item>
+<item >Pthrice</item>
+<item >Pto</item>
+<item >Rednet</item>
+<item >Reel</item>
+<item >Ring</item>
+<item >Rlol</item>
+<item >Rod</item>
+<item >Rods,inbundle/bunch/truss</item>
+<item >Sachet</item>
+<item >Sack</item>
+<item >Sea-chest</item>
+<item >Shallowcrate</item>
+<item >Sheet</item>
+<item >Sheetmetal</item>
+<item >Sheets,inbundle/bunch/truss</item>
+<item >Shrinkwrapped</item>
+<item >Skeletoncase</item>
+<item >Slipsheet</item>
+<item >Spindle</item>
+<item >Suitcase</item>
+<item >Tank,cylindrical</item>
+<item >Tank,rectangular</item>
+<item >Tea-chest</item>
+<item >Tin</item>
+<item >Tray</item>
+<item >Tray pack</item>
+<item >Trunk</item>
+<item >Truss</item>
+<item >Tub</item>
+<item >Tube</item>
+<item >Tube,collapsible</item>
+<item >Tubes,inbundle/bunch/truss</item>
+<item >Tun</item>
+<item >Unpacked or unpackaged</item>
+<item >Vacuum-packed</item>
+<item >Vail</item>
+<item >Vat</item>
+<item >Wickerbottle</item>
+         
+     </string-array>
+     <string-array name="imo_classs_array">
+         <item > fire hazard</item>
+<item >projection hazard but not a mass explosion hazard</item>
+<item  >Corrosives</item>
+<item  >Explosives</item>
+<item >Extremely insensitive articles which do not have a mass explosion hazard</item>
+<item > Flammable Liquids</item>
+<item > Flammable Solids or Substances</item>
+<item > Flammable gases</item>
+<item > Flammable solids, self-reactive substances and desensitize Explosives.</item>
+<item  > Gases: Compressed, Liquefied or Dissolved under Pressure</item>
+<item > High Flash Point between 23 Degree to 61 Degree C (73 degree to 141 Degree F)</item>
+<item > Infectious substances</item>
+<item > Intermediate Flash Point between 18 Degree to 23 Degree C (0 Degree to 73 Degree F)</item>
+<item > Low Flash Point F.P.below-18 Degree C (0 Degree F)</item>
+<item > Materials hazardous only in bulk</item>
+<item  > Miscellaneous dangerous substances and articles</item>
+<item > Non-Flammable gases</item>
+<item > Non-Hazardious Cargo</item>
+<item > Organic peroxides</item>
+<item  > Oxidizing Substances  and Organic Peroxides</item>
+<item > Oxidizing substances  by yielding oxygen increase</item>
+<item  > Radioactive Substances</item>
+<item > Substances and articles which present no significant hazard</item>
+<item > Substances liable to spontaneous combustion</item>
+<item > Substances which, in contact with water, emit flammable gases</item>
+<item > Toxic and infectious Substances</item>
+<item > Toxic gases</item>
+<item > Toxic substances</item>
+<item > Very insensitive substances which have a mass explosion hazard</item>
+<item > mass explosion hazard.</item>
+         
+     </string-array>
+     <string-array name="quantity_array">
+         <item >BAGS</item>
+<item >BALE</item>
+<item >BILLIONS OF UNITS</item>
+<item> BOTTLES</item>
+<item >BOX</item>
+<item> BUCKLES</item>
+<item >BUNCHES</item>
+<item >BUNDLES</item>
+<item >CANS</item>
+<item >CARTONS</item>
+<item >CASE</item>
+<item >CENTIMETER</item>
+<item >COILS</item>
+<item >CONTAINER</item>
+<item >CUBIC CENTIMETER</item>
+<item >CUBIC METER</item>
+<item >DAYS</item>
+<item >DOZEN</item>
+<item >DRUM</item>
+<item >FEET</item>
+<item >GRAMS</item>
+<item >GREAT BRITAIN TON</item>
+<item >GREAT GROSS</item>
+<item >GROSS</item>
+<item >GROSS YARDS</item>
+<item >HOURS</item>
+<item >KILOGRAMS</item>
+<item> KILOLITER</item>
+<item >KILOMETERS</item>
+<item> KITS</item>
+<item >LITERS</item>
+<item >METER</item>
+<item >METRIC TON</item>
+<item >MILLILITER</item>
+<item >MILLIONS OF UNIT</item>
+<item >MINUTES</item>
+<item >NO OF CONTAINER</item>
+<item >NO OF DAYS</item>
+<item >NO OF PLUG POINTS</item>
+<item >NUMBER</item>
+<item >PACKAGE</item>
+<item >PACKS</item>
+<item >PAIRS</item>
+<item >PALLET</item>
+<item >PIECES</item>
+<item >POUNDS</item>
+<item >QUINTAL</item>
+<item >ROLLS</item>
+<item >ROLLS</item>
+<item >SACKS</item>
+<item >SETS</item>
+<item >SHEET</item>
+<item >SQUARE FEET</item>
+<item >SQUARE METER</item>
+<item >SQUARE YARDS</item>
+<item >TABLETS</item>
+<item >TEN GRAMS</item>
+<item >THOUSANDS</item>
+<item >TUBES</item>
+<item >UNITS</item>
+<item >US GALLONS</item>
+<item >YARDS</item>
+           </string-array>
+     <string-array name="berthing_action_array">
+         <item >Sailing</item>
+<item> Shifting</item>
+<item >Un-Berthing</item>
+<item >Re-Berthing</item>
+<item >wharfing</item>
+         
+     </string-array>
+     <string-array name="berth_no_array">
+         <item> B2-BERTH </item>
+<item >C1-CLG1</item>
+<item >C2-CLG2</item>
+<item >SAILED-S</item>
+<item >TESTBERTH-TESTCODEDESCRIPTION</item>
+<item >TE345-TESTEEE</item>
+         
+     </string-array>
+     <string-array name="berth_req_array">
+         <item>Port</item> 
+	<item >Custom</item> 
+	<item >Shipping Agent</item>
 
+         
+     </string-array>
+     <string-array name="opr_nature_array">
+         <item >Daughter</item>
+	<item >De-stuffing</item>
+	<item >Delivery</item>
+	<item >Feeder</item>
+	<item >Loading</item>
+	<item >Loading / Unloading</item>
+	<item >Mainline</item>
+	<item >Mother</item>
+	<item >Stuffing</item>
+	<item >Unloading</item>
+         
+     </string-array>
+     <string-array name="deployment_place_array">
+         <item >On Board</item>
+		<item >On Shore</item>
+		<item >Overside</item>
+         
+     </string-array>
+     <string-array name="type_of_vessel_array">
+         <item >Asphalt/bitumen tanker</item>
+<item >Assistance vessel</item>
+<item >Barge carrier   Lash ship</item>
+<item >Barge tanker chemical</item>
+<item >Boat for sport fishing</item>
+<item >Bulk carrier</item>
+<item >Bunkership</item>
+<item >Buoyage vessel</item>
+<item >Cable layer</item>
+<item >Car carrier</item>
+<item >Cargo and passenger vessel</item>
+<item >Carrier general cargo/container</item>
+<item >Catamaran fast</item>
+<item >Cement carrier</item>
+<item >Chemical carrier</item>
+<item >Chemical tanker coaster</item>
+<item >Chemical tanker deep sea</item>
+<item >Climate registration vessel</item>
+<item >Coal carrier</item>
+<item >Container vessel</item>
+<item >Craft other recreational</item>
+<item >Craft pleasure longer than 20 metres</item>
+<item >Crane floating</item>
+<item >Crude oil tanker</item>
+<item >Cruise ship</item>
+<item >Cutter</item>
+<item >Dock floating</item>
+<item >Dredger</item>
+<item >Dry bulk carrier</item>
+<item >Factory ship</item>
+<item >Fast ship</item>
+<item >Ferry</item>
+<item >Fishery research vessel</item>
+<item >Fishing boat</item>
+<item >Fishing boat</item>
+<item >Freightbarge</item>
+<item >Freightbarge with containers</item>
+<item >Full container ship/cellular vessel</item>
+<item >Gas tanker</item>
+<item >General cargo vessel</item>
+<item >Grain vessel</item>
+<item >Gravel carrier</item>
+<item >Heavy cargo vessel</item>
+<item >Hospital vessel</item>
+<item >Hydrofoil</item>
+<item >Icebreaker</item>
+<item >Irradiated fuel carrier</item>
+<item >LNG tanker</item>
+<item >LNG/LPG tanker</item>
+<item >LPG tanker</item>
+<item >Liquefied gas tanker</item>
+<item >Livestock carrier</item>
+<item >Molasses tanker</item>
+<item >Motor freighter</item>
+<item >Motor freighter pushing at least one tank-ship</item>
+<item >Motor freighter pushing one or more freighters</item>
+<item >Motor freighter tug</item>
+<item> Motor freighter with one or more ships alongside</item>
+<item >Motor freighter with tanker</item>
+<item >Motor tanker</item>
+<item >Motor tanker tug</item>
+<item >Navy vessel</item>
+<item >Object not otherwise</item>
+<item >Object towed not otherwise specified</item>
+<item >Offshore support vessel</item>
+<item >Oil and other derivatives tanker</item>
+<item >Oil combat vessel</item>
+<item >Oil rig</item>
+<item >Ore carrier</item>
+<item >Other passenger ship</item>
+<item >Other sea-going vessel</item>
+<item >Other special tanker</item>
+<item >Passenger ship</item>
+<item >Passenger ship ferry red cross ship cruise ship</item>
+<item >Passenger ship sailing</item>
+<item >Patrol/measure ship</item>
+<item >Pilot boat</item>
+<item >Pipelaying vessel</item>
+<item >Pleasure boat</item>
+<item >Pontoon</item>
+<item >Push boat</item>
+<item >Pushboat single</item>
+<item >Pushtow eight barges at least one tanker or gas barge</item>
+<item >Pushtow eight cargo barges</item>
+<item >Pushtow five barges at least one tanker or gas barge</item>
+<item >Pushtow five cargo barges</item>
+<item >Pushtow four barges at least one tanker or gas barge</item>
+<item >Pushtow four cargo barges</item>
+<item >Pushtow nine cargo barges</item>
+<item >Pushtow nine or more barges at least one tanker or gas barge</item>
+<item >Pushtow one cargo barge</item>
+<item >Pushtow one gas/tank barge</item>
+<item >Pushtow seven barges at least one tanker or gas barge</item>
+<item >Pushtow seven cargo barges</item>
+<item >Pushtow six barges at least one tanker or gas barge</item>
+<item >Pushtow six cargo barges</item>
+<item >Pushtow three barges at least one tanker or gas barge</item>
+<item >Pushtow three cargo barges</item>
+<item >Pushtow two barges at least one tanker or gas barge</item>
+<item >Pushtow two cargo barges</item>
+<item >Rescue vessel</item>
+<item >Research and education ship</item>
+<item >RoRo vessel</item>
+<item >RoRo/Container vessel</item>
+<item >Sailing boat with auxiliary motor</item>
+<item >Sailing school ship</item>
+<item >Sailing yacht</item>
+<item >Salvage vessel</item>
+<item >Scientific vessel</item>
+<item >Service vessel police patrol port services</item>
+<item >Ship for environmental measurement</item>
+<item >Speedboat</item>
+<item >Steel products vessel</item>
+<item >Stone dumping vessel</item>
+<item >Structure floating</item>
+<item >Supply vessel</item>
+<item >Tankbarge</item>
+<item >Tankbarge gas</item>
+<item >Tanker</item>
+<item >Temperature controlled cargo vessels</item>
+<item >Timber/log carrier</item>
+<item >Training vessel</item>
+<item >Trawler</item>
+<item >Tug assisting a vessel or linked combination</item>
+<item >Tug freighter</item>
+<item >Tug freighter coupled</item>
+<item >Tug freighter/tanker coupled</item>
+<item >Tug one or more tows</item>
+<item >Tug single</item>
+<item >Tug tanker</item>
+<item >Tug with tow</item>
+<item >Tug without tow</item>
+<item >Unit carrier</item>
+<item >Vegetable oil tanker</item>
+<item> Vessel type unknown</item>
+<item >Vessel work maintenance craft floating derrick cable-ship buoy-ship dredge.</item>
+<item >Wood chips vessel</item>
+<item >Work ship</item>
+         
+     </string-array>
+     <string-array name="gang_type_array">
+         <item >Deck Foreman</item>
+<item >Gang Leader</item>
+<item >Hook</item>
+<item >Majdur</item>
+<item >Normal</item>
+<item >Signal Men</item>
+<item >Supervisor</item>
+<item >Talley Clerk</item>
+<item >Winch Men</item>
+         
+     </string-array>
+     <string-array name="shift_no_array">
+         <item>1</item>
+         <item>2</item>
+         <item>3</item>
+     </string-array>
+     <string-array name="container_type_classification_code_array">
+         <item>Empty</item>
+<item >Full</item>
+<item >Full, mixed consignment (LCL)</item>
+<item >Full, single consignment (FCL)</item>
+<item >More than half volume available</item>
+<item >More than one quarter volume available</item>
+<item >More than three quarters volume available</item>
+<item >No volume available</item>
+         
+     </string-array>
+     <string-array name="opr_type_array">
+         						<item>Grounding</item>
+						
+						
+						<item>Inward</item>
+						
+						
+						<item>Midstream</item>
+						
+						
+						<item>Normal</item>
+						
+						
+						<item>Others</item>
+						
+						
+						<item>Outward</item>
+						
+						
+						<item>Pullback</item>
+						
+						
+						<item>Shifting</item>
+						
+						
+						<item>Wharfing</item>
+ 
+         
+     </string-array>
+     <string-array name="movement_array">
+         
+	<item >Anchorage</item> 
+	
+	
+	<item >Cargo Jetty</item> 
+	
+	
+	<item >Dry Dock</item> 
+	
+	
+	<item >Mooring</item> 
+	
+	
+	<item >OTB</item> 
+	
+	
+	<item >Oil Jetty</item> 
+	
+	
+	<item >Others</item> 
+	
+	
+	<item >SBM</item> 
+	
+	
+	<item >Sea</item>
+
+         
+     </string-array>
+     <string-array name="pre_arrival_status_array">
+         <item>Draft</item>
+         <item>Active</item>
+     </string-array>
+     <string-array name="pho_free_pratique_status"></string-array>
+     <string-array name="service_category_array">
+         <item >ALL DUES</item> 
+	
+	<item >CARGO</item> 
+	
+	<item >CONTAINER</item> 
+	
+	<item >CONTAINERIZED CARGO</item> 
+	
+	<item >STEVEDORING</item> 
+	
+	<item >VESSEL</item> 
+
+         
+     </string-array>
+         
+     
 </resources>

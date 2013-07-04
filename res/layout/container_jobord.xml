@@ -23,8 +23,8 @@
             <TableRow
                 android:id="@+id/tableRow10"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" 
-                android:background="@android:color/holo_blue_light">
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_light" >
 
                 <TextView
                     android:id="@+id/textView10"
@@ -32,7 +32,6 @@
                     android:layout_height="wrap_content"
                     android:text="Job Order Details"
                     android:textAppearance="?android:attr/textAppearanceSmall" />
-
             </TableRow>
 
             <TableRow
@@ -44,19 +43,18 @@
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="VCN:" 
-                    android:layout_weight="1"/>
+                    android:layout_weight="1"
+                    android:text="VCN:" />
 
                 <EditText
-                    android:id="@+id/text_voyage_no"
+                    android:id="@+id/text_vcn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:ems="10" 
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:ems="10" >
 
                     <requestFocus />
                 </EditText>
-
             </TableRow>
 
             <TableRow
@@ -72,12 +70,11 @@
                     android:text="Doc Ref No:" />
 
                 <EditText
-                    android:id="@+id/editText2"
+                    android:id="@+id/text_doc_no"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:layout_weight="1"/>
-
+                    android:layout_weight="1"
+                    android:ems="10" />
             </TableRow>
 
             <TableRow
@@ -93,11 +90,10 @@
                     android:text="Port Code:" />
 
                 <Spinner
-                    android:id="@+id/spinner_port_of_sub"
+                    android:id="@+id/spin_port_code"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" 
-                    android:layout_weight="1"/>
-
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
             </TableRow>
 
             <TableRow
@@ -113,12 +109,11 @@
                     android:text="CFC Code:" />
 
                 <EditText
-                    android:id="@+id/editText4"
+                    android:id="@+id/text_cfc_code"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:ems="10" 
-                    android:layout_weight="1"/>
-
+                    android:layout_weight="1"
+                    android:ems="10" />
             </TableRow>
 
             <TableRow
@@ -131,10 +126,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Terminal Operator Code:" />
+                    android:text="Terminal Operation Code:" />
 
                 <Spinner
-                    android:id="@+id/spinner_purpose_of_visit"
+                    android:id="@+id/spin_terminal_code"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" 
                     android:layout_weight="1"/>
@@ -154,13 +149,12 @@
                     android:text="Job Order No:" />
 
                 <EditText
-                    android:id="@+id/editText5"
+                    android:id="@+id/text_order_no"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="date" 
-                    android:layout_weight="1"/>
-
+                    android:inputType="date" />
             </TableRow>
 
             <TableRow
@@ -176,13 +170,12 @@
                     android:text="Job Order Date:" />
 
                 <EditText
-                    android:id="@+id/editText6"
+                    android:id="@+id/text_order_date"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:ems="10"
-                    android:inputType="date" 
-                    android:layout_weight="1"/>
-
+                    android:inputType="date" />
             </TableRow>
 
             <TableRow
@@ -213,13 +206,9 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Cancel" />
-
                 </LinearLayout>
-
             </TableRow>
-
         </TableLayout>
-
     </LinearLayout>
 
 </ScrollView>

@@ -48,7 +48,7 @@
                     android:layout_weight="1"/>
 
                 <EditText
-                    android:id="@+id/text_voyage_no"
+                    android:id="@+id/text_vcn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10" 
@@ -72,7 +72,7 @@
                     android:layout_weight="1"/>
 
                 <EditText
-                    android:id="@+id/editText2"
+                    android:id="@+id/text_passenger"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -94,7 +94,7 @@
                     android:layout_weight="1"/>
 
                 <EditText
-                    android:id="@+id/text_imo_no"
+                    android:id="@+id/text_country"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10" 
@@ -115,7 +115,7 @@
                     android:layout_weight="1"/>
 
                 <EditText
-                    android:id="@+id/editText4"
+                    android:id="@+id/text_id_mark"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10" 
@@ -136,7 +136,7 @@
                     android:layout_weight="1"/>
 
                 <EditText
-                    android:id="@+id/editText7"
+                    android:id="@+id/text_visa_no"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10" 
@@ -157,7 +157,7 @@
                     android:layout_weight="1"/>
 
                 <EditText
-                    android:id="@+id/editText5"
+                    android:id="@+id/text_vdate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -179,7 +179,7 @@
                     android:layout_weight="1"/>
 
                 <Spinner
-                    android:id="@+id/spinner_port_of_sub"
+                    android:id="@+id/spin_nationality"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" 
                     android:layout_weight="1"/>
@@ -199,7 +199,7 @@
                     android:layout_weight="1"/>
 
                 <EditText
-                    android:id="@+id/editText6"
+                    android:id="@+id/textcontact_details"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"

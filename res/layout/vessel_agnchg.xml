@@ -48,7 +48,7 @@
                     android:layout_weight="1"/>
 
                 <EditText
-                    android:id="@+id/text_voyage_no"
+                    android:id="@+id/text_vcn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10" 
@@ -72,7 +72,7 @@
                     android:text="Vessel Name:" />
 
                 <EditText
-                    android:id="@+id/editText2"
+                    android:id="@+id/text_vessel_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -93,7 +93,7 @@
                     android:text="IMO Number:" />
 
                 <EditText
-                    android:id="@+id/text_imo_no"
+                    android:id="@+id/text_imo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10" 
@@ -114,7 +114,7 @@
                     android:text="New Agent Code:" />
 
                 <EditText
-                    android:id="@+id/editText4"
+                    android:id="@+id/text_agent_code"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10" 
@@ -135,7 +135,7 @@
                     android:text="Old Agent Code:" />
 
                 <EditText
-                    android:id="@+id/editText7"
+                    android:id="@+id/text_old_agent"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10" 
@@ -156,7 +156,7 @@
                     android:text="Place of change Port Code:" />
 
                 <EditText
-                    android:id="@+id/editText5"
+                    android:id="@+id/text_port"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10"
@@ -177,7 +177,7 @@
                     android:text="Place of change Berth Code:" />
 
                 <EditText
-                    android:id="@+id/editText6"
+                    android:id="@+id/text_place"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="10" 

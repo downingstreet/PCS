@@ -60,15 +60,33 @@ public class MySQLiteHelper extends SQLiteOpenHelper {
 			Cursor c = sd.query(VesselProfileTable.TABLE_NAME, columns, null, null, null, null, null);
 			return c;
 		}
+		
+		// fetch row with particular row id
+		public Cursor getRowVesselProfile(int column_id) {
+			SQLiteDatabase sd = getWritableDatabase();
+			String[] selectionArgs = new String[] {String.valueOf(column_id)};
+			Cursor c = sd.query(VesselProfileTable.TABLE_NAME, null, VesselProfileTable.COLUMN_ID + "= ? ", selectionArgs , null, null, null);
+			return c;
+		}
 
 		// removing vessel profile with particular id
-		public boolean removeVesselProfile(int column_id) {
+		public boolean removeVesselProfile (int column_id) {
 			SQLiteDatabase sd = getWritableDatabase();
 			String[] whereArgs = new String[] { String.valueOf(column_id) };
 
 			int result = sd.delete(VesselProfileTable.TABLE_NAME, VesselProfileTable.COLUMN_ID + "= ? ",
 					whereArgs);
 			return (result > 0);
+		}
+		
+		public boolean updateVesselProfile(int column_id , ContentValues values)
+		{
+			SQLiteDatabase sd = getWritableDatabase();
+			String[] whereArgs = new String[] {String.valueOf(column_id)};
+			
+			int result = sd.update(VesselProfileTable.TABLE_NAME, values, VesselProfileTable.COLUMN_ID + "= ? ", whereArgs);
+			return false;
+			
 		}
 
 	
